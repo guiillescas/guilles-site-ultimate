@@ -1001,6 +1001,25 @@ main {
   }
   .about-card {
     position: static;
+    padding: var(--s-5);
+  }
+  .about-info {
+    grid-template-columns: 1fr;
+    gap: var(--s-3);
+  }
+  .about-info-row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: var(--s-3);
+  }
+  .about-info-row .label {
+    flex-shrink: 0;
+    min-width: 88px;
+  }
+  .about-info-row .value {
+    text-align: right;
+    flex: 1;
   }
 }
 
@@ -1380,12 +1399,34 @@ main {
     gap: var(--s-3);
   }
   .release-head {
-    flex-direction: column;
-    align-items: flex-start;
     grid-template-columns: 1fr;
+    gap: var(--s-3);
+  }
+  .release-version {
+    gap: var(--s-2);
+    row-gap: var(--s-2);
+  }
+  .release-version .ver {
+    font-size: 13px;
+  }
+  .release-version .at {
+    display: none;
+  }
+  .release-version .company {
+    flex-basis: 100%;
+    font-size: 14px;
+    margin-top: 2px;
+  }
+  .release-version .tag.latest::after {
+    /* The lime-filled tag already signals "latest" — drop the
+       floating chip in tight viewports to avoid overlap. */
+    display: none;
   }
   .release-meta {
     text-align: left;
+    flex-direction: row;
+    gap: var(--s-3);
+    flex-wrap: wrap;
   }
   .experience-header {
     flex-direction: column;
@@ -1909,9 +1950,8 @@ footer {
   margin: 0;
 }
 
-.about-info dt,
 .about-info dd {
-  display: contents;
+  margin: 0;
 }
 
 /* ============================================

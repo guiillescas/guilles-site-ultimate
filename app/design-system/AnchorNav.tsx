@@ -40,15 +40,18 @@ export function AnchorNav() {
     return () => io.disconnect();
   }, []);
 
-  // Keep the active link visible inside the horizontally-scrolling nav.
+  // Keep the active link centered inside the horizontally-scrolling nav,
+  // without ever moving the page vertically.
   useEffect(() => {
-    if (!active || !navRef.current) return;
-    const link = navRef.current.querySelector<HTMLAnchorElement>(
+    const nav = navRef.current;
+    if (!active || !nav) return;
+    const link = nav.querySelector<HTMLAnchorElement>(
       `[data-target="${active}"]`,
     );
-    if (link) {
-      link.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
-    }
+    if (!link) return;
+    const target =
+      link.offsetLeft - nav.clientWidth / 2 + link.clientWidth / 2;
+    nav.scrollTo({ left: target, behavior: "smooth" });
   }, [active]);
 
   return (

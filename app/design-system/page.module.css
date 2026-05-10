@@ -4,6 +4,13 @@
   margin: 0 auto;
 }
 
+/* Design-system page has its own sticky nav (~50px), shorter than the
+   home page's chrome — override the global scroll-padding so anchor jumps
+   land just below the nav instead of leaving a 50px gap. */
+.main :global(section[id]) {
+  scroll-margin-top: 64px;
+}
+
 .docHero {
   padding: 80px 0 64px;
   border-bottom: 1px solid var(--border);
