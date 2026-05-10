@@ -3,13 +3,16 @@ import createMDX from "@next/mdx";
 
 const withMDX = createMDX({ extension: /\.mdx?$/ });
 
+const isDev = process.env.NODE_ENV === "development";
+
+// Dev needs `unsafe-eval` for React Refresh / HMR; prod hardens it away.
 const CSP = [
   "default-src 'self'",
-  "script-src 'self' 'unsafe-inline'",
+  `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""}`,
   "style-src 'self' 'unsafe-inline'",
   "img-src 'self' data: blob:",
   "font-src 'self' data:",
-  "connect-src 'self'",
+  `connect-src 'self'${isDev ? " ws:" : ""}`,
   "frame-ancestors 'self'",
   "form-action 'self'",
   "base-uri 'self'",
@@ -32,7 +35,7 @@ const SECURITY_HEADERS = [
     key: "Strict-Transport-Security",
     value: "max-age=63072000; includeSubDomains; preload",
   },
-] as const;
+];
 
 const nextConfig: NextConfig = {
   pageExtensions: ["ts", "tsx", "md", "mdx"],
