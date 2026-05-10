@@ -101,6 +101,19 @@
   letter-spacing: 0.02em;
   overflow-x: auto;
   scrollbar-width: none;
+  /* Fade out the right edge to hint that more nav items exist when scrollable. */
+  mask-image: linear-gradient(
+    to right,
+    black 0,
+    black calc(100% - 32px),
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    black 0,
+    black calc(100% - 32px),
+    transparent 100%
+  );
 }
 
 .anchorNav::-webkit-scrollbar {
@@ -111,10 +124,25 @@
   color: var(--text-dim);
   white-space: nowrap;
   transition: color 0.2s;
+  position: relative;
 }
 
 .anchorNav a:hover {
   color: var(--lime);
+}
+
+.anchorNav a.active {
+  color: var(--text);
+}
+
+.anchorNav a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -17px;
+  height: 1px;
+  background: var(--lime);
 }
 
 .anchorNav .brand {
@@ -122,6 +150,7 @@
   font-weight: 500;
   padding-right: 32px;
   border-right: 1px solid var(--border);
+  flex-shrink: 0;
 }
 
 .swatchGrid {
@@ -250,7 +279,7 @@
 
 .typeRow {
   display: grid;
-  grid-template-columns: 200px 1fr 200px;
+  grid-template-columns: 200px minmax(0, 1fr) 200px;
   gap: 24px;
   padding: 32px 0;
   border-bottom: 1px solid var(--border);
@@ -286,6 +315,9 @@
 .typeSample {
   color: var(--text);
   letter-spacing: -0.01em;
+  min-width: 0;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .typeSample.display {
@@ -298,21 +330,21 @@
 }
 
 .typeSample.h1 {
-  font-size: 96px;
+  font-size: clamp(48px, 9vw, 96px);
   font-weight: 500;
   line-height: 0.95;
   letter-spacing: -0.04em;
 }
 
 .typeSample.h2 {
-  font-size: 64px;
+  font-size: clamp(36px, 6vw, 64px);
   font-weight: 500;
   line-height: 1;
   letter-spacing: -0.04em;
 }
 
 .typeSample.h3 {
-  font-size: 40px;
+  font-size: clamp(28px, 4vw, 40px);
   font-weight: 500;
   line-height: 1.05;
   letter-spacing: -0.03em;
@@ -352,7 +384,7 @@
 
 .fontCard {
   display: grid;
-  grid-template-columns: 1.4fr 1fr;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
   gap: 32px;
   background: var(--bg-elevated);
   border: 1px solid var(--border);
@@ -363,11 +395,13 @@
 }
 
 .fontCard .alphabet {
-  font-size: 48px;
+  font-size: clamp(32px, 6vw, 48px);
   letter-spacing: -0.03em;
   line-height: 1.2;
   color: var(--text);
   font-weight: 500;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .fontCard.sans .alphabet {
@@ -695,6 +729,14 @@
   .anchorNav {
     padding: 12px 16px;
     margin: -64px -16px 48px;
+    gap: 20px;
+    font-size: 11px;
+  }
+  .anchorNav .brand {
+    padding-right: 20px;
+  }
+  .anchorNav a.active::after {
+    bottom: -13px;
   }
   .typeRow {
     grid-template-columns: 1fr;

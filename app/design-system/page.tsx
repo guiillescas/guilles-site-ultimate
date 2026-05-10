@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { Swatch } from "./Swatch";
+import { AnchorNav } from "./AnchorNav";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
@@ -105,18 +105,7 @@ const MOTION_CARDS = [
 export default function DesignSystemPage() {
   return (
     <main className={`${styles.main} docs-page`}>
-      <nav className={styles.anchorNav}>
-        <Link href="/" className={styles.brand}>
-          ← guilherme.illescas
-        </Link>
-        <a href="#palette">01 / Palette</a>
-        <a href="#typography">02 / Typography</a>
-        <a href="#spacing">03 / Spacing</a>
-        <a href="#components">04 / Components</a>
-        <a href="#motion">05 / Motion</a>
-        <a href="#voice">06 / Voice</a>
-        <a href="#dont">07 / Don'ts</a>
-      </nav>
+      <AnchorNav />
 
       <header className={styles.docHero}>
         <div className="eyebrow">Brand & Visual System</div>
