@@ -1095,6 +1095,7 @@ main {
 }
 
 .release {
+  display: block;
   position: relative;
   margin-bottom: var(--s-6);
   background: var(--bg-elevated);
@@ -1891,12 +1892,16 @@ footer {
    used in About skills, Experience timeline,
    Footer social, Work track
    ============================================ */
-.timeline,
 .about-skills,
 .release-stack,
 .footer-social {
   list-style: none;
   padding: 0;
+  margin: 0;
+}
+
+.timeline {
+  list-style: none;
   margin: 0;
 }
 
