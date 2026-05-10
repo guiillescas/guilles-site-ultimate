@@ -1,0 +1,30 @@
+{
+  "name": "guilles-site",
+  "version": "2026.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next": "^15.5.4",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@next/mdx": "^15.5.4",
+    "@tailwindcss/postcss": "^4.3.0",
+    "@types/mdx": "^2.0.13",
+    "@types/node": "^22.9.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "eslint": "^9.14.0",
+    "eslint-config-next": "^15.5.4",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^4.3.0",
+    "typescript": "^5.6.3"
+  }
+}
