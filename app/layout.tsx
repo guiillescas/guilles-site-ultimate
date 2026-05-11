@@ -1,4 +1,6 @@
 import type { Metadata, Viewport } from "next";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { geist, geistMono } from "./fonts";
 import { I18nProvider } from "@/lib/i18n/I18nProvider";
 import { SITE } from "@/lib/seo/site";
@@ -114,6 +116,8 @@ export default function RootLayout({
       </head>
       <body>
         <I18nProvider>{children}</I18nProvider>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

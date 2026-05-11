@@ -5,14 +5,19 @@ const withMDX = createMDX({ extension: /\.mdx?$/ });
 
 const isDev = process.env.NODE_ENV === "development";
 
+// Vercel Analytics + Speed Insights endpoints — scripts come from va.vercel-scripts.com,
+// page-view + vitals beacons go to vercel.com/_vercel/insights.
+const VERCEL_SCRIPTS = "https://va.vercel-scripts.com";
+const VERCEL_INSIGHTS = "https://vitals.vercel-insights.com";
+
 // Dev needs `unsafe-eval` for React Refresh / HMR; prod hardens it away.
 const CSP = [
   "default-src 'self'",
-  `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""}`,
+  `script-src 'self' 'unsafe-inline' ${VERCEL_SCRIPTS}${isDev ? " 'unsafe-eval'" : ""}`,
   "style-src 'self' 'unsafe-inline'",
   "img-src 'self' data: blob:",
   "font-src 'self' data:",
-  `connect-src 'self'${isDev ? " ws:" : ""}`,
+  `connect-src 'self' ${VERCEL_INSIGHTS} ${VERCEL_SCRIPTS}${isDev ? " ws:" : ""}`,
   "frame-ancestors 'self'",
   "form-action 'self'",
   "base-uri 'self'",
