@@ -17,7 +17,7 @@ export const SITE = {
   author: {
     name: "Guilherme Illescas",
     email: "oi@guilhermeillescas.dev",
-    location: "São Paulo, Brazil",
+    location: "Curitiba, Brazil",
     role: "Senior Software Engineer",
     company: "AwSales",
   },
@@ -34,7 +34,7 @@ export const SITE = {
     "Next.js engineer",
     "React engineer",
     "TypeScript engineer",
-    "São Paulo developer",
+    "Curitiba developer",
     "AI sales infrastructure",
     "AwSales",
     "Conquer",

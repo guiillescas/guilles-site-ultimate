@@ -87,7 +87,7 @@ export default function OpengraphImage() {
               color: "#8b8b90",
             }}
           >
-            <span>Senior Software Engineer · São Paulo, Brazil</span>
+            <span>Senior Software Engineer · Curitiba, Brazil</span>
             <span style={{ color: "#c5fc4d" }}>guilhermeillescas.dev</span>
           </div>
         </div>

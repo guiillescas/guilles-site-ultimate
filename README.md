@@ -234,7 +234,7 @@ If you want to fork the architecture for your own portfolio:
 email     oi@guilhermeillescas.dev
 github    @guiillescas
 linkedin  /in/guilherme-illescas
-location  são paulo · brt
+location  curitiba · brt
 status    ● available
 ```
 
@@ -246,7 +246,7 @@ All rights reserved. Code is published for transparency, not for reuse. **The vi
 
 ---
 
-<img src="docs/images/footer.png" alt="guilhermeillescas.dev · são paulo · brt · live now" width="100%" />
+<img src="docs/images/footer.png" alt="guilhermeillescas.dev · curitiba · brt · live now" width="100%" />
 
 <div align="center">
 <sub>Built with care · craft over volume · © 2026 Guilherme Illescas</sub>

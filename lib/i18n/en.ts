@@ -11,7 +11,7 @@ export const en = {
   /* hero meta */
   "hero.meta.role": "Senior Software Engineer",
   "hero.meta.based": "// Based in",
-  "hero.meta.location": "São Paulo, Brazil",
+  "hero.meta.location": "Curitiba, Brazil",
 
   /* hero headline (full HTML, word-by-word) */
   "hero.headline": [
@@ -45,18 +45,18 @@ export const en = {
   /* about */
   "about.eyebrow": "The engineer",
   "about.title":
-    'A craftsman, <span class="accent">not a code monkey</span>.',
+    'A craftsman, <span class="accent">not a ticket closer</span>.',
   "about.p1":
     "I believe <strong>great software is invisible</strong> — until you compare it with the alternatives. The interfaces I build aim for that: fast, deliberate, accessible, and quietly opinionated.",
   "about.p2":
-    "Six years into my career, I've designed and shipped applications used by <strong>over a million people worldwide</strong>. I've led teams, built design systems, refactored legacy codebases, founded a SaaS that was acquired in 2024, and learned that the best engineers obsess equally over performance, copy, and user feeling.",
+    "Six years into my career, I've designed and shipped applications used by <strong>35M+ people worldwide</strong>. I've led teams, built design systems, refactored legacy codebases, founded a SaaS that was acquired in 2024, and learned that the best engineers obsess equally over performance, copy, and user feeling.",
   "about.p3":
     "I'm currently a Senior Software Engineer at <strong>AwSales</strong>, where I help build autonomous sales agents at the frontier of AI. When I'm not coding, I'm probably teaching, reading on systems thinking, or planning my next side project.",
 
   "about.card.role.l": "role",
   "about.card.role.v": "Senior Software Engineer",
   "about.card.based.l": "based",
-  "about.card.based.v": "São Paulo, BR",
+  "about.card.based.v": "Curitiba, BR",
   "about.card.company.l": "company",
   "about.card.company.v": "AwSales — Full-time",
   "about.card.localtime.l": "local time",
@@ -76,27 +76,24 @@ export const en = {
 
   /* role titles */
   "role.senior": "Senior Software Engineer",
-  "role.lead": "Lead Software Engineer",
   "role.cofounder": "Co-founder & Senior Engineer",
-  "role.mobile": "Mobile Software Engineer",
   "role.engineer": "Software Engineer",
   "role.junior": "Junior Software Engineer",
 
   /* role types */
   "type.fulltime.remote": "Full-time · Remote",
-  "type.freelance.remote": "Freelance · Remote",
   "type.fulltime.hybrid": "Full-time · Hybrid",
   "type.founder.hybrid": "Founder · Hybrid",
   "type.fulltime.onsite": "Full-time · On-site",
 
   /* durations */
-  "dur.v8": "1y 4mo · current",
-  "dur.v7": "1y 11mo · freelance",
-  "dur.v6": "1y 1mo · full-time",
-  "dur.v5": "10mo · founder",
-  "dur.v4": "7mo · freelance",
-  "dur.v3": "7mo · freelance",
-  "dur.v2": "11mo · full-time",
+  "dur.v8": "1y 10mo · current",
+  "dur.v7": "1y 11mo · full-time",
+  "dur.v6_1": "1y 1mo · promotion",
+  "dur.v6_0": "1y 1mo · full-time",
+  "dur.v5": "1y 11mo · founder",
+  "dur.v4": "7mo · full-time",
+  "dur.v3": "11mo · full-time",
 
   /* releases — v8 */
   "v8.summary":
@@ -124,16 +121,26 @@ export const en = {
   "v7.d4":
     "Established testing baseline with <strong>Jest</strong> (unit) and <strong>Playwright</strong> (e2e)",
 
-  /* v6 */
-  "v6.summary":
-    "Led engineering on <strong>Conquer Plus</strong> — an education platform that issued <strong>10M+ certificates</strong> to <strong>35M+ students globally</strong>. Owned every phase: architecture, tech selection, delivery.",
-  "v6.d1": "Drove team growth — mentored engineers, set hiring bar, ran 1:1s",
-  "v6.d2":
+  /* v6.1 — promotion to Senior at Conquer */
+  "v6_1.summary":
+    "Promoted to Senior. Led engineering on <strong>Conquer Plus</strong> — an education platform that issued <strong>10M+ certificates</strong> to <strong>35M+ students globally</strong>. Owned every phase: architecture, tech selection, delivery.",
+  "v6_1.d1": "Drove team growth — mentored engineers, set hiring bar, ran 1:1s",
+  "v6_1.d2":
     "Established <strong>internal Design System</strong> in Figma + code, wired with Storybook",
-  "v6.d3":
+  "v6_1.d3":
     "Architected <strong>micro-frontends</strong> with Single SPA — independent deploys per domain",
-  "v6.d4": "Tuned performance via Lighthouse audits and bundle splitting",
-  "v6.d5": "Delivered tech talks to widen impact beyond the team",
+  "v6_1.d4": "Tuned performance via Lighthouse audits and bundle splitting",
+  "v6_1.d5": "Delivered tech talks to widen impact beyond the team",
+
+  /* v6.0 — joined Conquer as Software Engineer */
+  "v6_0.summary":
+    "Joined <strong>Conquer Plus</strong> to support product growth — feature delivery, bug triage and mentoring across a fast-moving education platform.",
+  "v6_0.d1":
+    "Led design and implementation of new features that lifted platform UX",
+  "v6_0.d2":
+    "Directed bug-resolution efforts — improved software reliability and performance",
+  "v6_0.d3":
+    "Mentored teammates through tech sessions, knowledge sharing and training materials",
 
   /* v5 */
   "v5.summary":
@@ -144,28 +151,21 @@ export const en = {
   "v5.d3":
     "<strong>Acquisition outcome</strong> — Amank was acquired by BHUB in 2024",
 
-  /* v4 */
+  /* v4 — Chamer */
   "v4.summary":
-    "Built the <strong>DoBank</strong> mobile app from scratch — core architecture, UI, GraphQL data layer.",
+    "Drove feature development across e-commerce platforms and data-driven dashboards in a small, fast-moving team.",
   "v4.d1":
-    "Developed every screen using <strong>React Native</strong>, focused on UX and security",
-  "v4.d2":
-    "Engineered the GraphQL data layer for efficient API consumption",
-
-  /* v3 */
-  "v3.summary":
-    "Drove e-commerce, dashboards and database integrations across multiple client projects.",
-  "v3.d1":
     "Implemented advanced SEO — <strong>+20% organic search rankings</strong>",
-  "v3.d2":
-    "Optimized app performance — reduced load times across platforms",
+  "v4.d2":
+    "Optimized application performance — reduced load times across platforms",
 
-  /* v2 */
-  "v2.summary":
+  /* v3 — WebTrip */
+  "v3.summary":
     "Where I cut my teeth — full-stack work, server maintenance and process automation in a small team.",
-  "v2.d1":
+  "v3.d1":
     "Automated <strong>6+ internal reporting flows</strong> — manual data entry down 70%",
-  "v2.d2": "Designed 10+ process improvements, reducing turnaround time",
+  "v3.d2":
+    "Designed 10+ process improvements, reducing turnaround time",
 
   /* work */
   "work.eyebrow": "Selected work",

@@ -335,7 +335,7 @@ export default function DesignSystemPage() {
                 fontStyle: "italic",
               }}
             >
-              not a code monkey
+              not a ticket closer
             </span>
             .
           </div>

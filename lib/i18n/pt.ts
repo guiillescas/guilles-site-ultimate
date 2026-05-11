@@ -11,7 +11,7 @@ export const pt = {
   /* hero meta */
   "hero.meta.role": "Engenheiro de Software Sênior",
   "hero.meta.based": "// Baseado em",
-  "hero.meta.location": "São Paulo, Brasil",
+  "hero.meta.location": "Curitiba, Brasil",
 
   /* hero headline — 9 words in PT */
   "hero.headline": [
@@ -47,18 +47,18 @@ export const pt = {
   /* about */
   "about.eyebrow": "O engenheiro",
   "about.title":
-    'Um artesão, <span class="accent">não um code monkey</span>.',
+    'Um artesão, <span class="accent">não um fechador de tickets</span>.',
   "about.p1":
     "Acredito que <strong>software bom é invisível</strong> — até você comparar com as alternativas. As interfaces que construo miram exatamente isso: rápidas, deliberadas, acessíveis, e silenciosamente opinativas.",
   "about.p2":
-    "Seis anos de carreira, desenhei e lancei aplicações usadas por <strong>mais de um milhão de pessoas no mundo</strong>. Liderei times, construí design systems, refatorei codebases legados, fundei um SaaS que foi adquirido em 2024, e aprendi que os melhores engenheiros se obcecam igualmente por performance, copy e o que o usuário sente.",
+    "Seis anos de carreira, desenhei e lancei aplicações usadas por <strong>mais de 35M de pessoas no mundo</strong>. Liderei times, construí design systems, refatorei codebases legados, fundei um SaaS que foi adquirido em 2024, e aprendi que os melhores engenheiros se obcecam igualmente por performance, copy e o que o usuário sente.",
   "about.p3":
     "Atualmente sou Engenheiro de Software Sênior na <strong>AwSales</strong>, onde ajudo a construir agentes autônomos de venda na fronteira da IA. Quando não estou codando, provavelmente estou ensinando, lendo sobre systems thinking, ou planejando o próximo side project.",
 
   "about.card.role.l": "função",
   "about.card.role.v": "Engenheiro de Software Sênior",
   "about.card.based.l": "local",
-  "about.card.based.v": "São Paulo, BR",
+  "about.card.based.v": "Curitiba, BR",
   "about.card.company.l": "empresa",
   "about.card.company.v": "AwSales — Tempo integral",
   "about.card.localtime.l": "hora local",
@@ -78,27 +78,24 @@ export const pt = {
 
   /* role titles */
   "role.senior": "Engenheiro de Software Sênior",
-  "role.lead": "Engenheiro Lead de Software",
   "role.cofounder": "Co-fundador & Engenheiro Sênior",
-  "role.mobile": "Engenheiro Mobile",
   "role.engineer": "Engenheiro de Software",
   "role.junior": "Engenheiro Júnior",
 
   /* role types */
   "type.fulltime.remote": "Tempo integral · Remoto",
-  "type.freelance.remote": "Freelance · Remoto",
   "type.fulltime.hybrid": "Tempo integral · Híbrido",
   "type.founder.hybrid": "Founder · Híbrido",
   "type.fulltime.onsite": "Tempo integral · Presencial",
 
   /* durations */
-  "dur.v8": "1a 4m · atual",
-  "dur.v7": "1a 11m · freelance",
-  "dur.v6": "1a 1m · tempo integral",
-  "dur.v5": "10m · founder",
-  "dur.v4": "7m · freelance",
-  "dur.v3": "7m · freelance",
-  "dur.v2": "11m · tempo integral",
+  "dur.v8": "1a 10m · atual",
+  "dur.v7": "1a 11m · tempo integral",
+  "dur.v6_1": "1a 1m · promoção",
+  "dur.v6_0": "1a 1m · tempo integral",
+  "dur.v5": "1a 11m · founder",
+  "dur.v4": "7m · tempo integral",
+  "dur.v3": "11m · tempo integral",
 
   /* v8 */
   "v8.summary":
@@ -126,19 +123,29 @@ export const pt = {
   "v7.d4":
     "Estabeleci a baseline de testes com <strong>Jest</strong> (unit) e <strong>Playwright</strong> (e2e)",
 
-  /* v6 */
-  "v6.summary":
-    "Liderei a engenharia do <strong>Conquer Plus</strong> — uma plataforma de educação que emitiu <strong>10M+ certificados</strong> para <strong>35M+ alunos globalmente</strong>. Tocava cada fase: arquitetura, seleção de tech, delivery.",
-  "v6.d1":
+  /* v6.1 — promoção a Sênior na Conquer */
+  "v6_1.summary":
+    "Promovido a Sênior. Liderei a engenharia do <strong>Conquer Plus</strong> — uma plataforma de educação que emitiu <strong>10M+ certificados</strong> para <strong>35M+ alunos globalmente</strong>. Tocava cada fase: arquitetura, seleção de tech, delivery.",
+  "v6_1.d1":
     "Conduzi o crescimento do time — mentorei engenheiros, defini a régua de hiring, fazia 1:1s",
-  "v6.d2":
+  "v6_1.d2":
     "Estabeleci o <strong>Design System interno</strong> no Figma + código, integrado com Storybook",
-  "v6.d3":
+  "v6_1.d3":
     "Arquitetei <strong>micro-frontends</strong> com Single SPA — deploys independentes por domínio",
-  "v6.d4":
+  "v6_1.d4":
     "Tunei performance via auditorias Lighthouse e bundle splitting",
-  "v6.d5":
+  "v6_1.d5":
     "Apresentei tech talks para ampliar o impacto além do time",
+
+  /* v6.0 — entrada na Conquer como Engenheiro de Software */
+  "v6_0.summary":
+    "Entrei no <strong>Conquer Plus</strong> para apoiar o crescimento do produto — entrega de features, triagem de bugs e mentoria em uma plataforma de educação em ritmo acelerado.",
+  "v6_0.d1":
+    "Liderei design e implementação de novas features que melhoraram a UX da plataforma",
+  "v6_0.d2":
+    "Conduzi esforços de resolução de bugs — melhorei a confiabilidade e performance do software",
+  "v6_0.d3":
+    "Mentorei colegas com sessões técnicas, compartilhamento de conhecimento e materiais de treinamento",
 
   /* v5 */
   "v5.summary":
@@ -150,28 +157,20 @@ export const pt = {
   "v5.d3":
     "<strong>Saída por aquisição</strong> — Amank foi adquirida pela BHUB em 2024",
 
-  /* v4 */
+  /* v4 — Chamer */
   "v4.summary":
-    "Construí o app mobile do <strong>DoBank</strong> do zero — arquitetura core, UI, camada de dados em GraphQL.",
+    "Conduzi desenvolvimento de features em plataformas de e-commerce e dashboards data-driven em um time pequeno e de ritmo acelerado.",
   "v4.d1":
-    "Desenvolvi cada tela em <strong>React Native</strong>, focado em UX e segurança",
-  "v4.d2":
-    "Engenhei a camada de dados em GraphQL para consumo eficiente da API",
-
-  /* v3 */
-  "v3.summary":
-    "Conduzi e-commerce, dashboards e integrações de banco de dados em múltiplos projetos de clientes.",
-  "v3.d1":
     "Implementei SEO avançado — <strong>+20% nos rankings de busca orgânica</strong>",
-  "v3.d2":
-    "Otimizei performance — reduzi tempos de carregamento entre plataformas",
+  "v4.d2":
+    "Otimizei performance da aplicação — reduzi tempos de carregamento entre plataformas",
 
-  /* v2 */
-  "v2.summary":
+  /* v3 — WebTrip */
+  "v3.summary":
     "Onde dei meus primeiros passos — trabalho full-stack, manutenção de servidor e automação de processos em um time pequeno.",
-  "v2.d1":
+  "v3.d1":
     "Automatizei <strong>6+ fluxos internos de reporting</strong> — entrada manual de dados caiu 70%",
-  "v2.d2":
+  "v3.d2":
     "Desenhei 10+ melhorias de processo, reduzindo tempo de turnaround",
 
   /* work */

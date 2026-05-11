@@ -33,7 +33,7 @@ export function buildStructuredData() {
         },
         address: {
           "@type": "PostalAddress",
-          addressLocality: "São Paulo",
+          addressLocality: "Curitiba",
           addressCountry: "BR",
         },
         sameAs: [

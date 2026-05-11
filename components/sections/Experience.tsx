@@ -3,6 +3,9 @@
 import { RevealOnScroll } from "@/components/motion/RevealOnScroll";
 import { ExperienceTimeline } from "./ExperienceTimeline";
 import { useT, useTHtml } from "@/lib/i18n/I18nProvider";
+import { releases } from "@/lib/data/releases";
+
+const RELEASE_COUNT = String(releases.length).padStart(2, "0");
 
 export function Experience() {
   const t = useT();
@@ -19,7 +22,7 @@ export function Experience() {
             <p className="experience-sub">{t("exp.sub")}</p>
           </div>
           <div className="experience-counter">
-            <span className="num">07</span>
+            <span className="num">{RELEASE_COUNT}</span>
             <span>{t("exp.counter")}</span>
           </div>
         </RevealOnScroll>
