@@ -71,6 +71,12 @@ export function ExperienceTimeline() {
                 <span className={`tag${r.isLatest ? " latest" : ""}`}>
                   {r.version}
                 </span>
+                {r.isLatest ? (
+                  <span className="latest-chip" aria-label="Latest release">
+                    <span className="latest-chip-dot" aria-hidden="true" />
+                    LATEST
+                  </span>
+                ) : null}
                 <span className="ver">guilherme/career</span>
                 <span className="at" aria-hidden="true">
                   @
