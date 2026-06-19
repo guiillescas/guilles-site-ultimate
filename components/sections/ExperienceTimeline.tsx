@@ -81,7 +81,34 @@ export function ExperienceTimeline() {
                 <span className="at" aria-hidden="true">
                   @
                 </span>
-                <span className="company">{r.company}</span>
+                {r.url ? (
+                  <a
+                    className="company"
+                    href={r.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`${r.company} — opens in a new tab`}
+                  >
+                    {r.company}
+                    <svg
+                      className="company-arrow"
+                      width="9"
+                      height="9"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M3 11L11 3M11 3H4M11 3V10"
+                        stroke="currentColor"
+                        strokeWidth="1.6"
+                        strokeLinecap="round"
+                      />
+                    </svg>
+                  </a>
+                ) : (
+                  <span className="company">{r.company}</span>
+                )}
               </div>
               <div className="release-meta">
                 <span>{r.dateRange}</span>

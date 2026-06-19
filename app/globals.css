@@ -1242,6 +1242,30 @@ main {
   font-size: 13px;
 }
 
+a.company {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  text-decoration: none;
+}
+
+a.company:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a.company .company-arrow {
+  opacity: 0.6;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+a.company:hover .company-arrow {
+  opacity: 1;
+  transform: translate(1px, -1px);
+}
+
 .release-meta {
   font-family: var(--font-mono);
   font-size: 11px;

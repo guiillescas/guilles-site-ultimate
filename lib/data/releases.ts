@@ -20,6 +20,7 @@ export type Release = {
   isLatest?: boolean;
   current?: boolean;
   company: string;        // displayed lowercased after `@`
+  url?: string;           // company/product link — renders the name as an external link
   dateRange: string;      // "Jul 2024 → present" — kept literal, no i18n
   durationKey: string;    // i18n key e.g. "dur.v8"
   roleKey: string;        // i18n key e.g. "role.senior"
@@ -36,6 +37,7 @@ export const releases: Release[] = [
     isLatest: true,
     current: true,
     company: "viralify",
+    url: "https://www.viralify.app/",
     dateRange: "Aug 2025 → present",
     durationKey: "dur.v9",
     roleKey: "role.cofounder.swe",
@@ -55,6 +57,7 @@ export const releases: Release[] = [
     version: "v8.0.0",
     current: true,
     company: "awsales",
+    url: "https://www.awsales.io/",
     dateRange: "Jul 2024 → present",
     durationKey: "dur.v8",
     roleKey: "role.senior",
@@ -91,6 +94,7 @@ export const releases: Release[] = [
   {
     version: "v6.1.0",
     company: "escola-conquer",
+    url: "https://conquer.plus/",
     dateRange: "Oct 2022 → Oct 2023",
     durationKey: "dur.v6_1",
     roleKey: "role.senior",
@@ -109,6 +113,7 @@ export const releases: Release[] = [
   {
     version: "v6.0.0",
     company: "escola-conquer",
+    url: "https://conquer.plus/",
     dateRange: "Sep 2021 → Oct 2022",
     durationKey: "dur.v6_0",
     roleKey: "role.engineer",
