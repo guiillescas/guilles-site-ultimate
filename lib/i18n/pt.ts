@@ -63,7 +63,7 @@ export const pt = {
   "about.card.company.v": "AwSales — Tempo integral",
   "about.card.localtime.l": "hora local",
   "about.card.status.l": "status",
-  "about.card.status.v": "● Aberto a conversas",
+  "about.card.status.v": "● Aberto a vagas efetivas",
   "about.card.tz.l": "fuso",
   "about.card.tz.v": "UTC−3 (BRT)",
   "about.card.skills": "Trabalhando atualmente com",
@@ -85,16 +85,16 @@ export const pt = {
   /* role types */
   "type.fulltime.remote": "Tempo integral · Remoto",
   "type.fulltime.hybrid": "Tempo integral · Híbrido",
-  "type.founder.hybrid": "Founder · Híbrido",
+  "type.founder.side": "Founder · Side project",
   "type.fulltime.onsite": "Tempo integral · Presencial",
 
   /* durations */
-  "dur.v8": "1a 10m · atual",
-  "dur.v7": "1a 11m · tempo integral",
+  "dur.v8": "2a · atual",
+  "dur.v7": "2a · integral → meio período",
   "dur.v6_1": "1a 1m · promoção",
-  "dur.v6_0": "1a 1m · tempo integral",
-  "dur.v5": "1a 11m · founder",
-  "dur.v4": "7m · tempo integral",
+  "dur.v6_0": "1a 2m · tempo integral",
+  "dur.v5": "2a · founder",
+  "dur.v4": "8m · tempo integral",
   "dur.v3": "11m · tempo integral",
 
   /* v8 */
@@ -122,6 +122,8 @@ export const pt = {
     "Refatorei hot paths — eficiência geral do app subiu <strong>+29%</strong>",
   "v7.d4":
     "Estabeleci a baseline de testes com <strong>Jest</strong> (unit) e <strong>Playwright</strong> (e2e)",
+  "v7.d5":
+    "Passei a <strong>meio período</strong> quando entrei na AwSales — mantive a plataforma estável na transição",
 
   /* v6.1 — promoção a Sênior na Conquer */
   "v6_1.summary":
@@ -149,7 +151,7 @@ export const pt = {
 
   /* v5 */
   "v5.summary":
-    "Co-fundei a <strong>Amank</strong> — uma plataforma de gestão de SaaS que ajuda empresas a centralizar e reduzir custos de software. Adquirida pela <strong>BHUB</strong> em 2024.",
+    "Co-fundei a <strong>Amank</strong> — uma plataforma de gestão de SaaS que ajuda empresas a centralizar e reduzir custos de software. Tocava como side project nas horas livres, junto com meus sócios, em paralelo ao trabalho full-time. Adquirida pela <strong>BHUB</strong> em 2024.",
   "v5.d1":
     "Construí a interface do produto do zero — usabilidade, performance, escalabilidade",
   "v5.d2":

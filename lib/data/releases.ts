@@ -64,6 +64,7 @@ export const releases: Release[] = [
       { key: "v7.d2", marker: "+", tone: "shipped" },
       { key: "v7.d3", marker: "+" },
       { key: "v7.d4", marker: "+" },
+      { key: "v7.d5", marker: "+" },
     ],
     stack: ["Next.js", "TypeScript", "Tailwind", "Playwright", "Jest", "SEO"],
     hash: "b3d4f1a",
@@ -108,7 +109,7 @@ export const releases: Release[] = [
     dateRange: "Jun 2021 → May 2023",
     durationKey: "dur.v5",
     roleKey: "role.cofounder",
-    typeKey: "type.founder.hybrid",
+    typeKey: "type.founder.side",
     summaryKey: "v5.summary",
     diffs: [
       { key: "v5.d1", marker: "+", tone: "shipped" },

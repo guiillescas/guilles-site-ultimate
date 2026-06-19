@@ -61,7 +61,7 @@ export const en = {
   "about.card.company.v": "AwSales — Full-time",
   "about.card.localtime.l": "local time",
   "about.card.status.l": "status",
-  "about.card.status.v": "● Open to talks",
+  "about.card.status.v": "● Open to full-time roles",
   "about.card.tz.l": "timezone",
   "about.card.tz.v": "UTC−3 (BRT)",
   "about.card.skills": "Currently working with",
@@ -83,16 +83,16 @@ export const en = {
   /* role types */
   "type.fulltime.remote": "Full-time · Remote",
   "type.fulltime.hybrid": "Full-time · Hybrid",
-  "type.founder.hybrid": "Founder · Hybrid",
+  "type.founder.side": "Founder · Side project",
   "type.fulltime.onsite": "Full-time · On-site",
 
   /* durations */
-  "dur.v8": "1y 10mo · current",
-  "dur.v7": "1y 11mo · full-time",
+  "dur.v8": "2y · current",
+  "dur.v7": "2y · full-time → part-time",
   "dur.v6_1": "1y 1mo · promotion",
-  "dur.v6_0": "1y 1mo · full-time",
-  "dur.v5": "1y 11mo · founder",
-  "dur.v4": "7mo · full-time",
+  "dur.v6_0": "1y 2mo · full-time",
+  "dur.v5": "2y · founder",
+  "dur.v4": "8mo · full-time",
   "dur.v3": "11mo · full-time",
 
   /* releases — v8 */
@@ -120,6 +120,8 @@ export const en = {
     "Refactored hot paths — overall app efficiency up <strong>+29%</strong>",
   "v7.d4":
     "Established testing baseline with <strong>Jest</strong> (unit) and <strong>Playwright</strong> (e2e)",
+  "v7.d5":
+    "Moved to <strong>part-time</strong> when I joined AwSales — kept the platform stable through the transition",
 
   /* v6.1 — promotion to Senior at Conquer */
   "v6_1.summary":
@@ -144,7 +146,7 @@ export const en = {
 
   /* v5 */
   "v5.summary":
-    "Co-founded <strong>Amank</strong> — a SaaS management platform helping companies centralize and reduce software costs. Acquired by <strong>BHUB</strong> in 2024.",
+    "Co-founded <strong>Amank</strong> — a SaaS management platform helping companies centralize and reduce software costs. Ran it as a side project on nights and weekends with my co-founders, alongside my full-time role. Acquired by <strong>BHUB</strong> in 2024.",
   "v5.d1":
     "Built the product interface from zero — usability, performance, scalability",
   "v5.d2": "Co-shaped product strategy, end-to-end features, architecture",
