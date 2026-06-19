@@ -70,7 +70,7 @@ export const pt = {
 
   /* experience */
   "exp.eyebrow": "Carreira, como um changelog",
-  "exp.title": 'Releases <span class="accent">v2.0 → v8.0</span>.',
+  "exp.title": 'Releases <span class="accent">v2.0 → v9.0</span>.',
   "exp.sub":
     "Cada função é uma versão major. Cada bullet é uma mudança real entregue — features, refatorações, liderança. Sem enrolação.",
   "exp.counter": "releases lançados",
@@ -79,6 +79,7 @@ export const pt = {
   /* role titles */
   "role.senior": "Engenheiro de Software Sênior",
   "role.cofounder": "Co-fundador & Engenheiro Sênior",
+  "role.cofounder.swe": "Co-fundador & Engenheiro de Software",
   "role.engineer": "Engenheiro de Software",
   "role.junior": "Engenheiro Júnior",
 
@@ -89,6 +90,7 @@ export const pt = {
   "type.fulltime.onsite": "Tempo integral · Presencial",
 
   /* durations */
+  "dur.v9": "11m · side project",
   "dur.v8": "2a · atual",
   "dur.v7": "2a · integral → meio período",
   "dur.v6_1": "1a 1m · promoção",
@@ -96,6 +98,20 @@ export const pt = {
   "dur.v5": "2a · founder",
   "dur.v4": "8m · tempo integral",
   "dur.v3": "11m · tempo integral",
+
+  /* v9 (Viralify) */
+  "v9.summary":
+    "SaaS de IA que transforma vídeos virais em vendas. Análises diárias de virais e roteiros gerados por IA. Sou o único responsável por produto e engenharia; meu co-founder cuida de negócio e conteúdo. Projeto paralelo em part-time, junto ao cargo full-time na <strong>AwSales</strong>.",
+  "v9.d1":
+    "Construí o produto de ponta a ponta — frontend, backend, modelagem de dados (<strong>MongoDB</strong>) e deploy (<strong>Vercel</strong>) — como único engenheiro e dono de todas as decisões técnicas e de produto",
+  "v9.d2":
+    "Desenvolvi o <strong>motor de geração de roteiros com IA</strong> — pipeline que parte de vídeos que já viralizaram e gera roteiros adaptados ao nicho de cada usuário",
+  "v9.d3":
+    "Implementei toda a camada de billing com <strong>Stripe</strong> — assinaturas recorrentes, webhooks e ciclo de vida das assinaturas",
+  "v9.d4":
+    "Liderei um pivot de produto de um acervo de roteiros virais para um <strong>gerador de roteiros com IA</strong>, guiado pelo uso real dos usuários",
+  "v9.d5":
+    "Tração: <strong>180+ cadastros</strong> e <strong>40 assinantes pagantes ativos</strong> (~22% de conversão cadastro→pago); base praticamente dobrou (19 → 40) nas primeiras 6 semanas após o lançamento",
 
   /* v8 */
   "v8.summary":

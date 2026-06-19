@@ -32,8 +32,27 @@ export type Release = {
 
 export const releases: Release[] = [
   {
-    version: "v8.0.0",
+    version: "v9.0.0",
     isLatest: true,
+    current: true,
+    company: "viralify",
+    dateRange: "Aug 2025 → present",
+    durationKey: "dur.v9",
+    roleKey: "role.cofounder.swe",
+    typeKey: "type.founder.side",
+    summaryKey: "v9.summary",
+    diffs: [
+      { key: "v9.d1", marker: "★", tone: "led" },
+      { key: "v9.d2", marker: "+", tone: "shipped" },
+      { key: "v9.d3", marker: "+", tone: "shipped" },
+      { key: "v9.d4", marker: "★", tone: "led" },
+      { key: "v9.d5", marker: "+", tone: "shipped" },
+    ],
+    stack: ["Next.js", "React", "TypeScript", "MongoDB", "Stripe", "Claude", "Tailwind", "Vercel"],
+    hash: "b9f4e21",
+  },
+  {
+    version: "v8.0.0",
     current: true,
     company: "awsales",
     dateRange: "Jul 2024 → present",

@@ -68,7 +68,7 @@ export const en = {
 
   /* experience */
   "exp.eyebrow": "Career, as a changelog",
-  "exp.title": 'Releases <span class="accent">v2.0 → v8.0</span>.',
+  "exp.title": 'Releases <span class="accent">v2.0 → v9.0</span>.',
   "exp.sub":
     "Each role is a major version. Each bullet is a real change shipped — features, refactors, leadership. No fluff.",
   "exp.counter": "releases shipped",
@@ -77,6 +77,7 @@ export const en = {
   /* role titles */
   "role.senior": "Senior Software Engineer",
   "role.cofounder": "Co-founder & Senior Engineer",
+  "role.cofounder.swe": "Co-founder & Software Engineer",
   "role.engineer": "Software Engineer",
   "role.junior": "Junior Software Engineer",
 
@@ -87,6 +88,7 @@ export const en = {
   "type.fulltime.onsite": "Full-time · On-site",
 
   /* durations */
+  "dur.v9": "11mo · side project",
   "dur.v8": "2y · current",
   "dur.v7": "2y · full-time → part-time",
   "dur.v6_1": "1y 1mo · promotion",
@@ -94,6 +96,20 @@ export const en = {
   "dur.v5": "2y · founder",
   "dur.v4": "8mo · full-time",
   "dur.v3": "11mo · full-time",
+
+  /* releases — v9 (Viralify) */
+  "v9.summary":
+    "AI SaaS that turns viral videos into sales — daily viral-content analysis and AI-generated scripts. I'm the sole owner of product and engineering; my co-founder runs business and content. A part-time side venture, alongside my full-time role at <strong>AwSales</strong>.",
+  "v9.d1":
+    "Built the product end-to-end — frontend, backend, data modeling (<strong>MongoDB</strong>) and deploy (<strong>Vercel</strong>) — as the sole engineer and owner of every technical and product decision",
+  "v9.d2":
+    "Developed the <strong>AI script-generation engine</strong> — a pipeline that starts from already-viral videos and generates scripts tailored to each user's niche",
+  "v9.d3":
+    "Implemented the entire <strong>Stripe</strong> billing layer — recurring subscriptions, webhooks and subscription lifecycle",
+  "v9.d4":
+    "Led a product pivot from a library of viral scripts to an <strong>AI script generator</strong>, driven by real user behavior",
+  "v9.d5":
+    "Traction: <strong>180+ signups</strong> and <strong>40 active paying subscribers</strong> (~22% signup-to-paid); subscriber base nearly doubled (19 → 40) in the first 6 weeks after launch",
 
   /* releases — v8 */
   "v8.summary":
