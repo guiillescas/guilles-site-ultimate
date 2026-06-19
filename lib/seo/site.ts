@@ -9,7 +9,7 @@ export const SITE = {
   shortName: "Guilles",
   title: "Guilherme Illescas — Senior Software Engineer",
   description:
-    "Senior software engineer crafting high-performance web products for millions of users. Currently building AI sales infrastructure at AwSales. Previously: Conquer (10M+ certificates, 35M+ students), Amank (acquired 2024).",
+    "Senior software engineer building high-performance web products for millions. Now at AwSales (AI sales infra). Ex-Conquer, founder of Amank (acquired 2024).",
   locale: {
     default: "en_US",
     alternate: ["pt_BR"],

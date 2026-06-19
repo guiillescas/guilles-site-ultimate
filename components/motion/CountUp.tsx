@@ -15,7 +15,11 @@ export function CountUp({
 }) {
   const { lang } = useI18n();
   const ref = useRef<HTMLSpanElement>(null);
-  const [val, setVal] = useState(0);
+  // Initialize with the final value so the server-rendered HTML carries the
+  // real number (not 0) for crawlers and no-JS readers. The first client
+  // render matches this, avoiding a hydration mismatch; the effect below then
+  // resets to 0 and animates up once the section scrolls into view.
+  const [val, setVal] = useState(to);
   const startedRef = useRef(false);
 
   useEffect(() => {
@@ -31,6 +35,10 @@ export function CountUp({
       startedRef.current = true;
       return;
     }
+
+    // Hydrated and motion is allowed: drop to 0 to prime the count-up. The
+    // Signal section sits below the fold, so this happens before it is seen.
+    setVal(0);
 
     const io = new IntersectionObserver(
       (entries) => {
@@ -55,9 +63,15 @@ export function CountUp({
     return () => io.disconnect();
   }, [to, duration]);
 
-  const display =
+  const format = (n: number) =>
     decimals > 0
-      ? val.toFixed(decimals)
-      : Math.floor(val).toLocaleString(LOCALE_TO_HTML[lang]);
-  return <span ref={ref}>{display}</span>;
+      ? n.toFixed(decimals)
+      : Math.floor(n).toLocaleString(LOCALE_TO_HTML[lang]);
+  // Visible text animates; aria-label always exposes the final value so
+  // assistive tech announces the real number even mid-animation.
+  return (
+    <span ref={ref} aria-label={format(to)}>
+      {format(val)}
+    </span>
+  );
 }
