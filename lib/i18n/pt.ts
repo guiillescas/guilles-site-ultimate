@@ -70,7 +70,7 @@ export const pt = {
 
   /* experience */
   "exp.eyebrow": "Carreira, como um changelog",
-  "exp.title": 'Releases <span class="accent">v2.0 → v9.0</span>.',
+  "exp.title": 'Releases <span class="accent">v1.0 → v7.0</span>.',
   "exp.sub":
     "Cada função é uma versão major. Cada bullet é uma mudança real entregue — features, refatorações, liderança. Sem enrolação.",
   "exp.counter": "releases lançados",

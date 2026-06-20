@@ -36,7 +36,7 @@ export type Release = {
 
 export const releases: Release[] = [
   {
-    version: "v9.0.0",
+    version: "v7.0.0",
     isLatest: true,
     current: true,
     company: "viralify",
@@ -58,7 +58,7 @@ export const releases: Release[] = [
     hash: "b9f4e21",
   },
   {
-    version: "v8.0.0",
+    version: "v6.0.0",
     current: true,
     company: "awsales",
     url: "https://www.awsales.io/",
@@ -78,7 +78,7 @@ export const releases: Release[] = [
     hash: "a8f2c7e",
   },
   {
-    version: "v7.0.0",
+    version: "v5.0.0",
     company: "previdenciarista",
     url: "https://previdenciarista.com/",
     partTime: true,
@@ -97,7 +97,7 @@ export const releases: Release[] = [
     hash: "b3d4f1a",
   },
   {
-    version: "v6.1.0",
+    version: "v4.1.0",
     company: "escola-conquer",
     url: "https://conquer.plus/",
     dateRange: "Oct 2022 → Oct 2023",
@@ -116,7 +116,7 @@ export const releases: Release[] = [
     hash: "e1c5b09",
   },
   {
-    version: "v6.0.0",
+    version: "v4.0.0",
     company: "escola-conquer",
     url: "https://conquer.plus/",
     dateRange: "Sep 2021 → Oct 2022",
@@ -133,7 +133,7 @@ export const releases: Release[] = [
     hash: "4a08d72",
   },
   {
-    version: "v5.0.0",
+    version: "v3.0.0",
     company: "amank → bhub",
     url: "https://amank.com.br/",
     branch: "side/amank",
@@ -151,7 +151,7 @@ export const releases: Release[] = [
     hash: "d7a2189",
   },
   {
-    version: "v4.0.0",
+    version: "v2.0.0",
     company: "chamer-tech",
     url: "https://www.chamer.com.br/",
     dateRange: "Feb 2021 → Sep 2021",
@@ -167,7 +167,7 @@ export const releases: Release[] = [
     hash: "2b94da5",
   },
   {
-    version: "v3.0.0",
+    version: "v1.0.0",
     company: "webtrip",
     dateRange: "Jan 2020 → Nov 2020",
     durationKey: "dur.v3",
