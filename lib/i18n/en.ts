@@ -72,6 +72,7 @@ export const en = {
   "exp.sub":
     "Each role is a major version. Each line is a real change I delivered — features, refactors, leadership. No filler.",
   "exp.counter": "releases shipped",
+  "exp.cv": "Download CV",
   "release.role.label": "Role",
 
   /* role titles */
