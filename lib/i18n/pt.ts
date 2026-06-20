@@ -63,14 +63,14 @@ export const pt = {
   "about.card.company.v": "AwSales — Tempo integral",
   "about.card.localtime.l": "hora local",
   "about.card.status.l": "status",
-  "about.card.status.v": "● Aberto a conversas",
+  "about.card.status.v": "● Aberto a vagas efetivas",
   "about.card.tz.l": "fuso",
   "about.card.tz.v": "UTC−3 (BRT)",
   "about.card.skills": "Trabalhando atualmente com",
 
   /* experience */
   "exp.eyebrow": "Carreira, como um changelog",
-  "exp.title": 'Releases <span class="accent">v2.0 → v8.0</span>.',
+  "exp.title": 'Releases <span class="accent">v1.0 → v7.0</span>.',
   "exp.sub":
     "Cada função é uma versão major. Cada bullet é uma mudança real entregue — features, refatorações, liderança. Sem enrolação.",
   "exp.counter": "releases lançados",
@@ -79,23 +79,39 @@ export const pt = {
   /* role titles */
   "role.senior": "Engenheiro de Software Sênior",
   "role.cofounder": "Co-fundador & Engenheiro Sênior",
+  "role.cofounder.swe": "Co-fundador & Engenheiro de Software",
   "role.engineer": "Engenheiro de Software",
   "role.junior": "Engenheiro Júnior",
 
   /* role types */
   "type.fulltime.remote": "Tempo integral · Remoto",
   "type.fulltime.hybrid": "Tempo integral · Híbrido",
-  "type.founder.hybrid": "Founder · Híbrido",
+  "type.founder.side": "Founder · Side project",
   "type.fulltime.onsite": "Tempo integral · Presencial",
 
   /* durations */
-  "dur.v8": "1a 10m · atual",
-  "dur.v7": "1a 11m · tempo integral",
+  "dur.v9": "11m · side project",
+  "dur.v8": "2a · atual",
+  "dur.v7": "2a · integral → meio período",
   "dur.v6_1": "1a 1m · promoção",
-  "dur.v6_0": "1a 1m · tempo integral",
-  "dur.v5": "1a 11m · founder",
-  "dur.v4": "7m · tempo integral",
+  "dur.v6_0": "1a 2m · tempo integral",
+  "dur.v5": "2a · founder",
+  "dur.v4": "8m · tempo integral",
   "dur.v3": "11m · tempo integral",
+
+  /* v9 (Viralify) */
+  "v9.summary":
+    "SaaS de IA que transforma vídeos virais em vendas. Análises diárias de virais e roteiros gerados por IA. Sou o único responsável por produto e engenharia; meu co-founder cuida de negócio e conteúdo. Projeto paralelo em part-time, junto ao cargo full-time na <strong>AwSales</strong>.",
+  "v9.d1":
+    "Construí o produto de ponta a ponta — frontend, backend, modelagem de dados (<strong>MongoDB</strong>) e deploy (<strong>Vercel</strong>) — como único engenheiro e dono de todas as decisões técnicas e de produto",
+  "v9.d2":
+    "Desenvolvi o <strong>motor de geração de roteiros com IA</strong> — pipeline que parte de vídeos que já viralizaram e gera roteiros adaptados ao nicho de cada usuário",
+  "v9.d3":
+    "Implementei toda a camada de billing com <strong>Stripe</strong> — assinaturas recorrentes, webhooks e ciclo de vida das assinaturas",
+  "v9.d4":
+    "Liderei um pivot de produto de um acervo de roteiros virais para um <strong>gerador de roteiros com IA</strong>, guiado pelo uso real dos usuários",
+  "v9.d5":
+    "Tração: <strong>180+ cadastros</strong> e <strong>40 assinantes pagantes ativos</strong> (~22% de conversão cadastro→pago); base praticamente dobrou (19 → 40) nas primeiras 6 semanas após o lançamento",
 
   /* v8 */
   "v8.summary":
@@ -118,10 +134,10 @@ export const pt = {
     "Melhorei a performance do site em <strong>+22%</strong> (Core Web Vitals & Lighthouse)",
   "v7.d2":
     "Subi os scores de SEO em <strong>+9%</strong> via dados estruturados, GA & GTM",
-  "v7.d3":
-    "Refatorei hot paths — eficiência geral do app subiu <strong>+29%</strong>",
   "v7.d4":
     "Estabeleci a baseline de testes com <strong>Jest</strong> (unit) e <strong>Playwright</strong> (e2e)",
+  "v7.note":
+    "Passei a <strong>meio período em jul 2024</strong> quando entrei na AwSales (full-time) — mantive a plataforma estável durante a transição.",
 
   /* v6.1 — promoção a Sênior na Conquer */
   "v6_1.summary":
@@ -149,7 +165,7 @@ export const pt = {
 
   /* v5 */
   "v5.summary":
-    "Co-fundei a <strong>Amank</strong> — uma plataforma de gestão de SaaS que ajuda empresas a centralizar e reduzir custos de software. Adquirida pela <strong>BHUB</strong> em 2024.",
+    "Co-fundei a <strong>Amank</strong> — uma plataforma de gestão de SaaS que ajuda empresas a centralizar e reduzir custos de software. Tocava como side project nas horas livres, junto com meus sócios, em paralelo ao trabalho full-time. Adquirida pela <strong>BHUB</strong> em 2024.",
   "v5.d1":
     "Construí a interface do produto do zero — usabilidade, performance, escalabilidade",
   "v5.d2":
