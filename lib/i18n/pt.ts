@@ -134,8 +134,6 @@ export const pt = {
     "Melhorei a performance do site em <strong>+22%</strong> (Core Web Vitals & Lighthouse)",
   "v7.d2":
     "Subi os scores de SEO em <strong>+9%</strong> via dados estruturados, GA & GTM",
-  "v7.d3":
-    "Refatorei hot paths — eficiência geral do app subiu <strong>+29%</strong>",
   "v7.d4":
     "Estabeleci a baseline de testes com <strong>Jest</strong> (unit) e <strong>Playwright</strong> (e2e)",
   "v7.d5":

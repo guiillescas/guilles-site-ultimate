@@ -132,8 +132,6 @@ export const en = {
     "Improved site performance by <strong>+22%</strong> (Core Web Vitals & Lighthouse)",
   "v7.d2":
     "Lifted SEO scores by <strong>+9%</strong> via structured data, GA & GTM",
-  "v7.d3":
-    "Refactored hot paths — overall app efficiency up <strong>+29%</strong>",
   "v7.d4":
     "Established testing baseline with <strong>Jest</strong> (unit) and <strong>Playwright</strong> (e2e)",
   "v7.d5":

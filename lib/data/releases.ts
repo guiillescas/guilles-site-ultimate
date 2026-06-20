@@ -76,6 +76,7 @@ export const releases: Release[] = [
   {
     version: "v7.0.0",
     company: "previdenciarista",
+    url: "https://previdenciarista.com/",
     dateRange: "Oct 2023 → Sep 2025",
     durationKey: "dur.v7",
     roleKey: "role.senior",
@@ -84,7 +85,6 @@ export const releases: Release[] = [
     diffs: [
       { key: "v7.d1", marker: "+", tone: "shipped" },
       { key: "v7.d2", marker: "+", tone: "shipped" },
-      { key: "v7.d3", marker: "+" },
       { key: "v7.d4", marker: "+" },
       { key: "v7.d5", marker: "+" },
     ],
@@ -130,6 +130,7 @@ export const releases: Release[] = [
   {
     version: "v5.0.0",
     company: "amank → bhub",
+    url: "https://amank.com.br/",
     dateRange: "Jun 2021 → May 2023",
     durationKey: "dur.v5",
     roleKey: "role.cofounder",
@@ -146,6 +147,7 @@ export const releases: Release[] = [
   {
     version: "v4.0.0",
     company: "chamer-tech",
+    url: "https://www.chamer.com.br/",
     dateRange: "Feb 2021 → Sep 2021",
     durationKey: "dur.v4",
     roleKey: "role.engineer",
