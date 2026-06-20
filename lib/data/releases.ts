@@ -21,6 +21,9 @@ export type Release = {
   current?: boolean;
   company: string;        // displayed lowercased after `@`
   url?: string;           // company/product link — renders the name as an external link
+  branch?: string;        // git-style branch name (e.g. "side/amank") — side ventures render off the main trunk
+  partTime?: boolean;     // renders a PART-TIME chip
+  noteKey?: string;       // i18n key for a highlighted callout (e.g. the part-time transition)
   dateRange: string;      // "Jul 2024 → present" — kept literal, no i18n
   durationKey: string;    // i18n key e.g. "dur.v8"
   roleKey: string;        // i18n key e.g. "role.senior"
@@ -38,6 +41,7 @@ export const releases: Release[] = [
     current: true,
     company: "viralify",
     url: "https://www.viralify.app/",
+    branch: "side/viralify",
     dateRange: "Aug 2025 → present",
     durationKey: "dur.v9",
     roleKey: "role.cofounder.swe",
@@ -77,6 +81,8 @@ export const releases: Release[] = [
     version: "v7.0.0",
     company: "previdenciarista",
     url: "https://previdenciarista.com/",
+    partTime: true,
+    noteKey: "v7.note",
     dateRange: "Oct 2023 → Sep 2025",
     durationKey: "dur.v7",
     roleKey: "role.senior",
@@ -86,7 +92,6 @@ export const releases: Release[] = [
       { key: "v7.d1", marker: "+", tone: "shipped" },
       { key: "v7.d2", marker: "+", tone: "shipped" },
       { key: "v7.d4", marker: "+" },
-      { key: "v7.d5", marker: "+" },
     ],
     stack: ["Next.js", "TypeScript", "Tailwind", "Playwright", "Jest", "SEO"],
     hash: "b3d4f1a",
@@ -131,6 +136,7 @@ export const releases: Release[] = [
     version: "v5.0.0",
     company: "amank → bhub",
     url: "https://amank.com.br/",
+    branch: "side/amank",
     dateRange: "Jun 2021 → May 2023",
     durationKey: "dur.v5",
     roleKey: "role.cofounder",

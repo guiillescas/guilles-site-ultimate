@@ -134,8 +134,8 @@ export const en = {
     "Lifted SEO scores by <strong>+9%</strong> via structured data, GA & GTM",
   "v7.d4":
     "Established testing baseline with <strong>Jest</strong> (unit) and <strong>Playwright</strong> (e2e)",
-  "v7.d5":
-    "Moved to <strong>part-time</strong> when I joined AwSales — kept the platform stable through the transition",
+  "v7.note":
+    "Went <strong>part-time in Jul 2024</strong> when I joined AwSales (full-time) — kept the platform stable through the transition.",
 
   /* v6.1 — promotion to Senior at Conquer */
   "v6_1.summary":

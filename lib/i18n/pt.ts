@@ -136,8 +136,8 @@ export const pt = {
     "Subi os scores de SEO em <strong>+9%</strong> via dados estruturados, GA & GTM",
   "v7.d4":
     "Estabeleci a baseline de testes com <strong>Jest</strong> (unit) e <strong>Playwright</strong> (e2e)",
-  "v7.d5":
-    "Passei a <strong>meio período</strong> quando entrei na AwSales — mantive a plataforma estável na transição",
+  "v7.note":
+    "Passei a <strong>meio período em jul 2024</strong> quando entrei na AwSales (full-time) — mantive a plataforma estável durante a transição.",
 
   /* v6.1 — promoção a Sênior na Conquer */
   "v6_1.summary":

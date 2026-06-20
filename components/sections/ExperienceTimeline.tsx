@@ -62,10 +62,27 @@ export function ExperienceTimeline() {
       {releases.map((r) => (
         <li
           key={r.version}
-          className={`release${r.current ? " current" : ""}`}
+          className={`release${r.current ? " current" : ""}${r.branch ? " branch" : ""}`}
         >
           <article>
-            <div className="release-marker" aria-hidden="true" />
+            <div className="release-marker" aria-hidden="true">
+              {r.branch ? (
+                <svg
+                  className="branch-curve"
+                  width="22"
+                  height="40"
+                  viewBox="0 0 22 40"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M22 0 C 22 24, 0 16, 0 40"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                  />
+                </svg>
+              ) : null}
+            </div>
             <header className="release-head">
               <div className="release-version">
                 <span className={`tag${r.isLatest ? " latest" : ""}`}>
@@ -75,6 +92,18 @@ export function ExperienceTimeline() {
                   <span className="latest-chip" aria-label="Latest release">
                     <span className="latest-chip-dot" aria-hidden="true" />
                     LATEST
+                  </span>
+                ) : null}
+                {r.current && !r.isLatest ? (
+                  <span className="status-chip is-current" aria-label="Current role">
+                    <span className="chip-dot" aria-hidden="true" />
+                    CURRENT
+                  </span>
+                ) : null}
+                {r.partTime ? (
+                  <span className="status-chip is-parttime" aria-label="Part-time">
+                    <span className="chip-dot" aria-hidden="true" />
+                    PART-TIME
                   </span>
                 ) : null}
                 <span className="ver">guilherme/career</span>
@@ -109,9 +138,15 @@ export function ExperienceTimeline() {
                 ) : (
                   <span className="company">{r.company}</span>
                 )}
+                {r.branch ? (
+                  <span className="branch-chip">
+                    <span className="branch-dot" aria-hidden="true" />
+                    Side project
+                  </span>
+                ) : null}
               </div>
               <div className="release-meta">
-                <span>{r.dateRange}</span>
+                <span className="date-range">{r.dateRange}</span>
                 <span className="duration">{t(r.durationKey)}</span>
               </div>
             </header>
@@ -122,6 +157,14 @@ export function ExperienceTimeline() {
                 <span className="type">{t(r.typeKey)}</span>
               </div>
               <div className="release-changes">
+                {r.noteKey ? (
+                  <div className="release-callout">
+                    <span className="callout-icon" aria-hidden="true">
+                      ◐
+                    </span>
+                    <span {...tHtml(r.noteKey)} />
+                  </div>
+                ) : null}
                 <p className="release-summary" {...tHtml(r.summaryKey)} />
                 {r.diffs.map((d) => (
                   <div className="diff-line" key={d.key}>
