@@ -15,7 +15,7 @@ const strip = (s: string) =>
     .trim();
 
 /** git-style company handles → proper résumé names */
-const COMPANY_NAMES: Record<string, string> = {
+export const COMPANY_NAMES: Record<string, string> = {
   viralify: "Viralify",
   awsales: "AwSales",
   previdenciarista: "Previdenciarista",
