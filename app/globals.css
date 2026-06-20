@@ -1088,8 +1088,11 @@ main {
 .timeline::before {
   content: "";
   position: absolute;
-  left: 8px;
-  top: 12px;
+  /* the first release is a branch (Viralify), so the trunk starts at the point
+     where that branch peels off (node top 28 + half 9 + curve height 38 ≈ 75),
+     not at the very top — no dangling stub above the divergence. */
+  left: 24px;
+  top: var(--trunk-top, 75px);
   bottom: 12px;
   width: 1px;
   background: linear-gradient(
@@ -1104,8 +1107,8 @@ main {
 .timeline::after {
   content: "";
   position: absolute;
-  left: 8px;
-  top: 12px;
+  left: 24px;
+  top: var(--trunk-top, 75px);
   width: 1px;
   height: var(--scroll-progress, 0%);
   background: linear-gradient(to bottom, var(--lime), transparent);
@@ -1120,7 +1123,8 @@ main {
   background: var(--bg-elevated);
   border: 1px solid var(--border);
   border-radius: 16px;
-  overflow: hidden;
+  /* visible so the graph nodes + branch curves in the left gutter aren't clipped */
+  overflow: visible;
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out),
@@ -1138,7 +1142,7 @@ main {
 
 .release-marker {
   position: absolute;
-  left: -32px;
+  left: -32.5px;
   top: 28px;
   width: 18px;
   height: 18px;
@@ -1173,13 +1177,24 @@ main {
    (-10 vs the trunk marker's -32 → 22px right of the rail) and an SVG curve
    peels it off the continuous trunk spine. */
 .release.branch .release-marker {
-  left: -10px;
+  left: -20.5px;
   background: var(--bg);
   border-color: var(--lime-dim);
 }
 
-.release.branch.in-view .release-marker {
-  border-color: var(--lime-dim);
+/* the current side project (Viralify) brightens its node to lime as it scrolls
+   in; its curve goes lime too. past side projects (Amank) keep a green node but
+   a grey curve, reading inactive like the trunk line. */
+.release.branch.current.in-view .release-marker {
+  border-color: var(--lime);
+}
+
+.release.branch.current .branch-curve {
+  color: var(--lime-dim);
+}
+
+.release.branch.current.in-view .branch-curve {
+  color: var(--lime);
 }
 
 /* a branch node is a side project, not the live HEAD — no current pulse */
@@ -1191,11 +1206,20 @@ main {
   position: absolute;
   right: 50%;
   top: 50%;
-  width: 22px;
-  height: 40px;
-  color: var(--lime-dim);
+  width: 13px;
+  height: 38px;
+  color: var(--border-strong);
   overflow: visible;
   pointer-events: none;
+}
+
+/* past branch curve: grey at the trunk → green at the node */
+.branch-curve .grad-trunk {
+  stop-color: var(--border-strong);
+}
+
+.branch-curve .grad-node {
+  stop-color: var(--lime-dim);
 }
 
 /* "Side project" pill */
@@ -1292,6 +1316,8 @@ main {
   padding: var(--s-5) var(--s-5) var(--s-4);
   border-bottom: 1px solid var(--border);
   background: var(--bg-overlay);
+  /* round the top to match the card now that the card no longer clips */
+  border-radius: 16px 16px 0 0;
 }
 
 .release-version {
@@ -1539,14 +1565,18 @@ a.company:hover .company-arrow {
   .timeline {
     padding-left: var(--s-5);
   }
+  .timeline::before,
+  .timeline::after {
+    left: 11px;
+  }
   .release-marker {
-    left: -22px;
+    left: -21.5px;
   }
   .release.branch .release-marker {
-    left: -8px;
+    left: -13.5px;
   }
   .release.branch .branch-curve {
-    width: 14px;
+    width: 8px;
   }
   .release-body {
     grid-template-columns: 1fr;

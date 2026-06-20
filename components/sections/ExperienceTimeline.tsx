@@ -27,6 +27,26 @@ export function ExperienceTimeline() {
       timeline.style.setProperty("--scroll-progress", `${prog * 100}%`);
     };
 
+    // Pin the trunk line's top to where the first branch curve actually ends, so
+    // the spine starts exactly at the divergence (no dangling stub, no gap) —
+    // measured from the real layout instead of a hard-coded offset.
+    const setTrunkTop = () => {
+      const curve = timeline.querySelector(".branch-curve");
+      const release = curve?.closest<HTMLElement>(".release");
+      if (!curve || !release) return;
+      // offsetTop is layout-based (ignores the reveal transform); the rect diff
+      // is transform-invariant (curve and card move together), so the junction
+      // comes out right even mid reveal-animation.
+      const top =
+        release.offsetTop +
+        (curve.getBoundingClientRect().bottom -
+          release.getBoundingClientRect().top) -
+        7; // tuck the trunk slightly under the curve end so they overlap cleanly
+      timeline.style.setProperty("--trunk-top", `${top}px`);
+    };
+    setTrunkTop();
+    window.addEventListener("resize", setTrunkTop);
+
     if (!reduceMotion) {
       update();
       window.addEventListener("scroll", update, { passive: true });
@@ -53,6 +73,7 @@ export function ExperienceTimeline() {
     return () => {
       window.removeEventListener("scroll", update);
       window.removeEventListener("resize", update);
+      window.removeEventListener("resize", setTrunkTop);
       io.disconnect();
     };
   }, []);
@@ -75,9 +96,28 @@ export function ExperienceTimeline() {
                   fill="none"
                   aria-hidden="true"
                 >
+                  {!r.current ? (
+                    <defs>
+                      <linearGradient
+                        id={`branch-grad-${r.version.replace(/\./g, "-")}`}
+                        x1="0"
+                        y1="40"
+                        x2="22"
+                        y2="0"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" className="grad-trunk" />
+                        <stop offset="1" className="grad-node" />
+                      </linearGradient>
+                    </defs>
+                  ) : null}
                   <path
                     d="M22 0 C 22 24, 0 16, 0 40"
-                    stroke="currentColor"
+                    stroke={
+                      r.current
+                        ? "currentColor"
+                        : `url(#branch-grad-${r.version.replace(/\./g, "-")})`
+                    }
                     strokeWidth="1.5"
                   />
                 </svg>
