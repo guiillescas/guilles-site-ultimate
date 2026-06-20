@@ -74,6 +74,7 @@ export const pt = {
   "exp.sub":
     "Cada função é uma versão major. Cada bullet é uma mudança real entregue — features, refatorações, liderança. Sem enrolação.",
   "exp.counter": "releases lançados",
+  "exp.cv": "Baixar CV",
   "release.role.label": "Função",
 
   /* role titles */
