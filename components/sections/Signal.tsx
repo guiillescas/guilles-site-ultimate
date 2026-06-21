@@ -18,7 +18,7 @@ export function Signal() {
         <div className="signal-grid">
           <div className="stat" data-num="00">
             <div className="stat-value">
-              <CountUp to={35} />
+              <CountUp to={5} />
               <span className="unit">M+</span>
             </div>
             <div className="stat-label">{t("stats.users")}</div>
@@ -31,13 +31,6 @@ export function Signal() {
             <div className="stat-label">{t("stats.customers")}</div>
           </div>
           <div className="stat" data-num="02">
-            <div className="stat-value">
-              <CountUp to={22} />
-              <span className="unit">%</span>
-            </div>
-            <div className="stat-label">{t("stats.perf")}</div>
-          </div>
-          <div className="stat" data-num="03">
             <div className="stat-value">
               <CountUp to={6} />
               <span className="unit">yr</span>

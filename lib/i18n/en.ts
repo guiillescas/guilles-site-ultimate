@@ -27,7 +27,7 @@ export const en = {
 
   /* hero tagline */
   "hero.tagline":
-    "I'm <strong>Guilherme Illescas</strong> — a senior full-stack engineer who cares deeply about the small details in interfaces. Right now I'm building AI sales tools at <strong>AwSales</strong>. Before that, I led product engineering at Conquer (10M+ certificates issued) and co-founded Amank (acquired in 2024).",
+    "I'm <strong>Guilherme Illescas</strong> — a senior full-stack engineer who cares deeply about the small details in interfaces. Right now I'm building AI sales tools at <strong>AwSales</strong>. Before that, I led product engineering at Conquer (1M+ certificates issued) and co-founded Amank (acquired in 2024).",
 
   "hero.cta.work": "See selected work",
   "hero.cta.talk": "Let's talk",
@@ -49,7 +49,7 @@ export const en = {
   "about.p1":
     "I believe <strong>great software is invisible</strong> — until you compare it with the alternatives. The interfaces I build aim for exactly that: fast, thoughtful, accessible, and with a clear point of view.",
   "about.p2":
-    "Six years into my career, I've designed and launched applications used by <strong>35M+ people worldwide</strong>. I've led teams, built design systems, improved old codebases, founded a SaaS that was acquired in 2024, and learned that the best engineers care just as much about performance, writing, and how the product feels to use.",
+    "Six years into my career, I've designed and launched applications used by <strong>5M+ people worldwide</strong>. I've led teams, built design systems, improved old codebases, founded a SaaS that was acquired in 2024, and learned that the best engineers care just as much about performance, writing, and how the product feels to use.",
   "about.p3":
     "I'm currently a Senior Software Engineer at <strong>AwSales</strong>, where I help build AI agents that handle sales on their own. When I'm not coding, I'm usually teaching, reading about systems thinking, or planning my next side project.",
 
@@ -77,7 +77,9 @@ export const en = {
 
   /* role titles */
   "role.senior": "Senior Software Engineer",
-  "role.cofounder": "Co-founder & Senior Engineer",
+  "role.frontend.senior": "Senior Software Engineer",
+  "role.frontend.mid": "Software Engineer",
+  "role.cofounder": "Co-founder & Senior Software Engineer",
   "role.cofounder.swe": "Co-founder & Software Engineer",
   "role.engineer": "Software Engineer",
   "role.junior": "Junior Software Engineer",
@@ -98,91 +100,119 @@ export const en = {
   "dur.v4": "8mo · full-time",
   "dur.v3": "11mo · full-time",
 
+  /* releases — v8 (AwSales) */
+  "v8.summary":
+    "An <strong>AI-powered sales platform</strong> — WhatsApp outreach, lead recovery, campaigns, AI assistants, and integrations like Hotmart and Stripe. I work across both the customer platform and the internal back-office, owning features from start to finish.",
+  "v8.d1":
+    "Was one of the engineers who built the <strong>core of the platform</strong> that's live today — shaping key technical decisions: changing flows, adjusting the data structure, and proposing solutions to reach the final result",
+  "v8.d2":
+    "Built and maintain the <strong>Stripe billing integration</strong> — subscriptions, webhooks and the full subscription lifecycle",
+  "v8.d3":
+    "Built the internal <strong>back-office app (Nuxt + Node)</strong> with two other engineers — the tool the operations team uses every day",
+  "v8.d4":
+    "Handle <strong>customer bugs end to end</strong> — taking issues straight from the client and fixing them across the whole stack, from database to frontend",
+  "v8.d5":
+    "Built the whole <strong>component library</strong> from scratch with React, Vite and Storybook, tested with Jest and Playwright — reusable components that keep the UI consistent",
+  "v8.d6":
+    "Ship customer-facing features — I design, build and refactor important flows, working closely with Product and Design",
+  "v8.d7":
+    "Help drive <strong>product discovery</strong> — scoping features, simplifying user journeys and keeping the roadmap aligned with the business",
+
   /* releases — v9 (Viralify) */
   "v9.summary":
-    "An AI SaaS that turns viral videos into sales — daily analysis of viral content and AI-generated scripts. I'm the only person behind product and engineering; my co-founder handles business and content. A part-time side project, alongside my full-time role at <strong>AwSales</strong>.",
+    "An <strong>AI SaaS that turns viral content into sales</strong> — daily AI analyses and AI-generated scripts. I'm the sole owner of product and engineering; my co-founder runs business and content. A part-time side venture, alongside my full-time role at <strong>AwSales</strong>.",
   "v9.d1":
-    "Built the whole product — frontend, backend, data modeling (<strong>MongoDB</strong>) and deployment (<strong>Vercel</strong>) — as the only engineer, making every technical and product decision",
+    "Built the product <strong>end to end</strong> — frontend, backend, data modeling (<strong>MongoDB</strong>) and deployment (<strong>Vercel</strong>) — as the only engineer and owner of every technical and product decision",
   "v9.d2":
-    "Built the <strong>AI script-generation engine</strong> — a pipeline that starts from videos that already went viral and creates scripts suited to each user's niche",
+    "Created the <strong>AI script-generation engine</strong> — it analyzes the scripts of videos that already went viral and generates new scripts tailored to each user's niche, integrating the <strong>OpenAI and Anthropic (Claude) APIs</strong>",
   "v9.d3":
-    "Implemented the entire <strong>Stripe</strong> billing layer — recurring subscriptions, webhooks and subscription lifecycle",
+    "Implemented the entire <strong>Stripe billing layer</strong> — recurring subscriptions, webhooks and subscription lifecycle",
   "v9.d4":
-    "Led a product change from a library of viral scripts to an <strong>AI script generator</strong>, based on how people actually used it",
+    "Led a <strong>product pivot</strong>, from a library of viral scripts to an AI script generator, driven by real user behavior",
   "v9.d5":
-    "Early results: <strong>180+ signups</strong> and <strong>40 active paying subscribers</strong> (~22% from signup to paid); the subscriber base nearly doubled (19 → 40) in the first 6 weeks after launch",
+    "Traction: <strong>180+ signups</strong> and <strong>40 active paying subscribers</strong> (~22% signup-to-paid conversion); the subscriber base nearly doubled (19 → 40) in the first 6 weeks after launch",
 
-  /* releases — v8 */
-  "v8.summary":
-    "Building AI agents that handle sales and support on their own — Brazil's leading AI-first sales platform. Integrations with Stripe, the Meta WhatsApp API, Hotmart and more.",
-  "v8.d1":
-    "Delivered <strong>customer-platform features</strong> from start to finish, shaping the UX together with Product and Design",
-  "v8.d2":
-    "Built and maintained the internal back-office app on <strong>Nuxt + Node</strong>",
-  "v8.d3":
-    "Led core integrations: <strong>Stripe</strong> billing & subscriptions, <strong>Meta WhatsApp API</strong>",
-  "v8.d4":
-    "Worked across squads: customer platform (8 people) + back-office (3 people)",
-  "v8.d5":
-    "Helped lead product discovery — suggested simpler user journeys and aligned the roadmap with business goals",
-
-  /* v7 */
+  /* releases — v7 (Previdenciarista) */
   "v7.summary":
-    "Maintained a business-critical SaaS platform serving <strong>27K+ active customers</strong> who run pension calculations. Responsible for the marketing site, SEO and core stability.",
+    "A business-critical SaaS platform serving <strong>27K+ active customers</strong> — lawyers running pension calculations and legal petitions. I worked across the main product and the website, focused on performance, SEO and reliability.",
   "v7.d1":
-    "Improved site performance by <strong>+22%</strong> (Core Web Vitals & Lighthouse)",
+    "Improved website <strong>performance</strong> through targeted refactors and best practices (Core Web Vitals & Lighthouse)",
   "v7.d2":
-    "Raised SEO scores by <strong>+9%</strong> using structured data, GA & GTM",
+    "Improved <strong>SEO</strong> with structured data, Google Analytics and Google Tag Manager — and tracked the results",
+  "v7.d3":
+    "Delivered features across the product with <strong>Next.js</strong>, TypeScript, Tailwind CSS and React Hooks",
   "v7.d4":
-    "Established testing baseline with <strong>Jest</strong> (unit) and <strong>Playwright</strong> (e2e)",
+    "Set up and maintained the <strong>CI/CD pipeline</strong> for faster, more reliable releases",
+  "v7.d5":
+    "Reduced a lot of <strong>code complexity</strong> through refactors — an easier codebase and a faster team",
+  "v7.d6":
+    "Wrote unit and end-to-end tests with <strong>Jest</strong> and <strong>Playwright</strong> to keep quality high",
   "v7.note":
     "Went <strong>part-time in Jul 2024</strong> when I joined AwSales (full-time) — kept the platform stable through the transition.",
 
   /* v6.1 — promotion to Senior at Conquer */
   "v6_1.summary":
-    "Promoted to Senior. Led engineering on <strong>Conquer Plus</strong> — an education platform that issued <strong>10M+ certificates</strong> to <strong>35M+ students worldwide</strong>. Handled every phase: architecture, tech choices, delivery.",
-  "v6_1.d1": "Drove team growth — mentored engineers, set hiring bar, ran 1:1s",
+    "Promoted to Senior. <strong>Conquer Plus</strong> is an education platform that reached <strong>5M+ users worldwide</strong> and issued <strong>1M+ certificates</strong> — still live today. I led the code architecture and the frontend, working across the stack with a strong frontend focus.",
+  "v6_1.d1":
+    "Was the <strong>frontend reference</strong> for the team — led the code architecture and frontend, making the technical decisions that shaped the platform that's live today",
   "v6_1.d2":
-    "Established <strong>internal Design System</strong> in Figma + code, wired with Storybook",
+    "Led a <strong>survey product end to end</strong>, frontend and backend — a dynamic survey used from collecting feedback to measuring a student's level",
   "v6_1.d3":
-    "Architected <strong>micro-frontends</strong> with Single SPA — independent deploys per domain",
-  "v6_1.d4": "Tuned performance via Lighthouse audits and bundle splitting",
-  "v6_1.d5": "Gave tech talks to share knowledge beyond my team",
+    "Built and maintained the internal <strong>Design System</strong> in Figma and code, with Storybook, so teams across the company could reuse components",
+  "v6_1.d4":
+    "Led the implementation of <strong>micro-frontends with Single SPA</strong> — each domain deploying on its own",
+  "v6_1.d5":
+    "Joined the <strong>product committee</strong> and mentored junior and mid-level engineers on both code and product",
+  "v6_1.d6":
+    "Created the projects for the <strong>frontend and Node courses</strong> and helped build the React course; shipped features (Next.js, TypeScript, Styled-Components) and tuned performance via Lighthouse",
 
   /* v6.0 — joined Conquer as Software Engineer */
   "v6_0.summary":
-    "Joined <strong>Conquer Plus</strong> to support product growth — building features, sorting bugs, and mentoring on a fast-moving education platform.",
+    "Joined <strong>Conquer Plus</strong> as a mid-level engineer and was promoted to Senior in Oct 2022. A hands-on phase — building the product and growing with the team.",
   "v6_0.d1":
-    "Led design and implementation of new features that lifted platform UX",
+    "Built features <strong>end to end</strong> as a full-stack developer, across frontend and backend",
   "v6_0.d2":
-    "Led bug-fixing work — improved the software's reliability and performance",
+    "Designed and implemented new features that improved the platform and the user experience",
   "v6_0.d3":
-    "Mentored teammates through tech sessions, knowledge sharing and training materials",
+    "Fixed bugs and improved the software's <strong>reliability and performance</strong>",
+  "v6_0.d4":
+    "Supported teammates day to day and created content for the <strong>programming courses</strong>, turning technical topics into clear lessons",
 
-  /* v5 */
+  /* v5 (Amank) */
   "v5.summary":
-    "Co-founded <strong>Amank</strong> — a SaaS management platform helping companies centralize and reduce software costs. Ran it as a side project on nights and weekends with my co-founders, alongside my full-time role. Acquired by <strong>BHUB</strong> in 2024.",
+    "Co-founded <strong>Amank</strong> — a SaaS platform that helped companies centralize, control and reduce their software costs. I owned the front-end and built it from the ground up while helping run the company day to day. <strong>Acquired by BHUB in 2024</strong>.",
   "v5.d1":
-    "Built the product interface from scratch — usability, performance, scalability",
-  "v5.d2": "Helped shape product strategy, full features, and architecture",
+    "Co-founded the company and built the product's <strong>front-end from zero</strong> — a modern stack for usability, performance and scalability",
+  "v5.d2":
+    "Helped run the company beyond code — product planning, architecture and end-to-end development, shaping features and UX from the start",
   "v5.d3":
-    "<strong>Outcome</strong>: Amank was acquired by BHUB in 2024",
+    "Operated in real <strong>founder mode</strong> — balancing speed, customer value and technical tradeoffs in an early-stage environment, wearing many hats",
+  "v5.d4":
+    "<strong>Outcome</strong>: Amank stood out in the market and was acquired by <strong>BHUB in 2024</strong>",
 
   /* v4 — Chamer */
   "v4.summary":
-    "Led feature development across e-commerce platforms and data-driven dashboards in a small, fast-moving team.",
+    "Drove feature development across <strong>e-commerce platforms and data-driven dashboards</strong> in a small, fast-moving team — with REST APIs for seamless database integration.",
   "v4.d1":
-    "Implemented advanced SEO — <strong>+20% organic search rankings</strong>",
+    "Built and shipped key features across platforms with <strong>React and TypeScript</strong>, improving interaction and functionality",
   "v4.d2":
-    "Optimized application performance — reduced load times across platforms",
+    "Spearheaded <strong>e-commerce platforms and data-driven dashboards</strong> that improved operations and decision-making",
+  "v4.d3":
+    "Implemented advanced <strong>SEO</strong> — improved organic search rankings, traffic and user acquisition",
+  "v4.d4":
+    "Optimized application <strong>performance</strong> — reduced load times and improved responsiveness",
 
   /* v3 — WebTrip */
   "v3.summary":
-    "Where I got my start — full-stack work, server maintenance and process automation in a small team.",
+    "Where I got my start — a versatile role spanning full-stack web work, <strong>server management</strong>, telephony and IT support in a small team.",
   "v3.d1":
-    "Automated <strong>6+ internal reporting flows</strong> — manual data entry down 70%",
+    "Automated <strong>6+ internal reporting flows</strong> with Google Apps Script — manual data entry down 70%, phone calls down 12%",
   "v3.d2":
-    "Designed 10+ process improvements, reducing turnaround time",
+    "Designed and implemented <strong>10+ process improvements</strong>, reducing turnaround time",
+  "v3.d3":
+    "Improved the company's websites (HTML, CSS, JavaScript) and managed <strong>Suite CRM</strong> for the sales team",
+  "v3.d4":
+    "Maintained servers and telephony (IVR + extensions), keeping operations running",
 
   /* work */
   "work.eyebrow": "Selected work",
@@ -241,7 +271,7 @@ export const en = {
   "process.c4.eyebrow": "04 / Voice",
   "process.c4.title": "Show, don't tell.",
   "process.c4.body":
-    "Real numbers (35M+ users, 22% performance gains) instead of adjectives. Short, direct CTAs. Code-comment markers as section dividers. No buzzwords.",
+    "Real numbers (5M+ users, 27K+ customers) instead of adjectives. Short, direct CTAs. Code-comment markers as section dividers. No buzzwords.",
 
   "process.cta.ds": "Read the full design system",
   "process.cta.gh": "View source on GitHub",

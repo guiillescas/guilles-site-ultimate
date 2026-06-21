@@ -753,7 +753,7 @@ export default function DesignSystemPage() {
             <div className={`${styles.voiceLabel} ${styles.do}`}>+ DO</div>
             <ul className={styles.voiceList}>
               <li>
-                <strong>Show before you tell.</strong> "35M+ users", "27K+ active
+                <strong>Show before you tell.</strong> "5M+ users", "27K+ active
                 customers" — not "passionate".
               </li>
               <li>

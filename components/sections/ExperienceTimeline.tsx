@@ -27,20 +27,29 @@ export function ExperienceTimeline() {
       timeline.style.setProperty("--scroll-progress", `${prog * 100}%`);
     };
 
-    // Pin the trunk line's top to where the first branch curve actually ends, so
-    // the spine starts exactly at the divergence (no dangling stub, no gap) —
-    // measured from the real layout instead of a hard-coded offset.
+    // Pin the trunk line's top to where the career graph begins. When the first
+    // release sits on the main trunk (e.g. AwSales), the spine starts at its node
+    // center — the CSS default (37px) already nails this, so we just clear any
+    // override. Only when a side-project branch *leads* the timeline do we pin
+    // the spine to where that branch peels off, so there's no dangling stub.
+    // offsetTop is layout-based (ignores the reveal transform); the rect diff is
+    // transform-invariant (curve and card move together), so the junction comes
+    // out right even mid reveal-animation.
     const setTrunkTop = () => {
-      const curve = timeline.querySelector(".branch-curve");
-      const release = curve?.closest<HTMLElement>(".release");
-      if (!curve || !release) return;
-      // offsetTop is layout-based (ignores the reveal transform); the rect diff
-      // is transform-invariant (curve and card move together), so the junction
-      // comes out right even mid reveal-animation.
+      const first = timeline.querySelector<HTMLElement>(".release");
+      if (!first) return;
+
+      if (!first.classList.contains("branch")) {
+        timeline.style.removeProperty("--trunk-top");
+        return;
+      }
+
+      const curve = first.querySelector(".branch-curve");
+      if (!curve) return;
       const top =
-        release.offsetTop +
+        first.offsetTop +
         (curve.getBoundingClientRect().bottom -
-          release.getBoundingClientRect().top) -
+          first.getBoundingClientRect().top) -
         7; // tuck the trunk slightly under the curve end so they overlap cleanly
       timeline.style.setProperty("--trunk-top", `${top}px`);
     };
