@@ -738,56 +738,6 @@ main {
 }
 
 /* ============================================
-   MARQUEE
-   ============================================ */
-.marquee {
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  padding: var(--s-5) 0;
-  overflow: hidden;
-  background: var(--bg);
-  position: relative;
-  z-index: 2;
-}
-
-.marquee-track {
-  display: flex;
-  gap: var(--s-7);
-  animation: marquee 36s linear infinite;
-  width: max-content;
-}
-
-.marquee-item {
-  display: flex;
-  align-items: center;
-  gap: var(--s-3);
-  font-family: var(--font-mono);
-  font-size: 14px;
-  color: var(--text-dim);
-  white-space: nowrap;
-  letter-spacing: -0.01em;
-}
-
-.marquee-item::after {
-  content: "";
-  width: 4px;
-  height: 4px;
-  background: var(--lime);
-  border-radius: 50%;
-  margin-left: var(--s-7);
-}
-
-.marquee-item:hover {
-  color: var(--text);
-}
-
-@keyframes marquee {
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-/* ============================================
    STATS / SIGNAL
    ============================================ */
 .signal {
@@ -796,7 +746,7 @@ main {
 
 .signal-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--s-7);
   padding: var(--s-8) 0;
 }
@@ -1111,11 +1061,11 @@ main {
 .timeline::before {
   content: "";
   position: absolute;
-  /* the first release is a branch (Viralify), so the trunk starts at the point
-     where that branch peels off (node top 28 + half 9 + curve height 38 ≈ 75),
-     not at the very top — no dangling stub above the divergence. */
+  /* the first release sits on the main trunk (AwSales), so the spine starts at
+     its node center (top 28 + half 9 ≈ 37). when a side-project branch leads the
+     timeline instead, ExperienceTimeline pins --trunk-top to the curve end. */
   left: 24px;
-  top: var(--trunk-top, 75px);
+  top: var(--trunk-top, 37px);
   bottom: 12px;
   width: 1px;
   background: linear-gradient(
@@ -1131,7 +1081,7 @@ main {
   content: "";
   position: absolute;
   left: 24px;
-  top: var(--trunk-top, 75px);
+  top: var(--trunk-top, 37px);
   width: 1px;
   height: var(--scroll-progress, 0%);
   background: linear-gradient(to bottom, var(--lime), transparent);
@@ -2201,8 +2151,8 @@ a:focus-visible {
 /* ============================================
    REDUCED MOTION — WCAG 2.3.3
    Disables decorative animations while keeping
-   functional transitions. Hides preloader and
-   marquee instead of running them.
+   functional transitions. Hides the preloader
+   instead of running it.
    ============================================ */
 @media (prefers-reduced-motion: reduce) {
   *,
@@ -2220,15 +2170,6 @@ a:focus-visible {
 
   .preloader {
     display: none;
-  }
-
-  .marquee {
-    overflow: hidden;
-  }
-
-  .marquee-track {
-    animation: none !important;
-    transform: none !important;
   }
 
   .reveal,

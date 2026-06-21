@@ -3,7 +3,6 @@ import { BgCanvas } from "@/components/chrome/BgCanvas";
 import { Nav } from "@/components/chrome/Nav";
 import { SkipLink } from "@/components/chrome/SkipLink";
 import { Hero } from "@/components/sections/Hero";
-import { Marquee } from "@/components/sections/Marquee";
 import { Signal } from "@/components/sections/Signal";
 import { About } from "@/components/sections/About";
 import { Experience } from "@/components/sections/Experience";
@@ -21,7 +20,6 @@ export default function Page() {
       <Nav />
       <main id="main">
         <Hero />
-        <Marquee />
         <Signal />
         <About />
         <Experience />
