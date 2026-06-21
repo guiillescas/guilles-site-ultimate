@@ -28,7 +28,7 @@ export const pt = {
 
   /* hero tagline */
   "hero.tagline":
-    "Sou <strong>Guilherme Illescas</strong> — engenheiro full-stack sênior obcecado pelo craft milimétrico de interfaces. Atualmente construindo a infraestrutura de vendas com IA na <strong>AwSales</strong>. Antes disso: liderei a engenharia de produto na Conquer (10M+ certificados emitidos) e co-fundei a Amank (adquirida em 2024).",
+    "Sou <strong>Guilherme Illescas</strong> — engenheiro full-stack sênior obcecado pelo craft milimétrico de interfaces. Atualmente construindo a infraestrutura de vendas com IA na <strong>AwSales</strong>. Antes disso: liderei a engenharia de produto na Conquer (1M+ certificados emitidos) e co-fundei a Amank (adquirida em 2024).",
 
   "hero.cta.work": "Ver trabalhos selecionados",
   "hero.cta.talk": "Vamos conversar",
@@ -51,7 +51,7 @@ export const pt = {
   "about.p1":
     "Acredito que <strong>software bom é invisível</strong> — até você comparar com as alternativas. As interfaces que construo miram exatamente isso: rápidas, deliberadas, acessíveis, e silenciosamente opinativas.",
   "about.p2":
-    "Seis anos de carreira, desenhei e lancei aplicações usadas por <strong>mais de 35M de pessoas no mundo</strong>. Liderei times, construí design systems, refatorei codebases legados, fundei um SaaS que foi adquirido em 2024, e aprendi que os melhores engenheiros se obcecam igualmente por performance, copy e o que o usuário sente.",
+    "Seis anos de carreira, desenhei e lancei aplicações usadas por <strong>mais de 5M de pessoas no mundo</strong>. Liderei times, construí design systems, refatorei codebases legados, fundei um SaaS que foi adquirido em 2024, e aprendi que os melhores engenheiros se obcecam igualmente por performance, copy e o que o usuário sente.",
   "about.p3":
     "Atualmente sou Engenheiro de Software Sênior na <strong>AwSales</strong>, onde ajudo a construir agentes autônomos de venda na fronteira da IA. Quando não estou codando, provavelmente estou ensinando, lendo sobre systems thinking, ou planejando o próximo side project.",
 
@@ -79,10 +79,12 @@ export const pt = {
 
   /* role titles */
   "role.senior": "Engenheiro de Software Sênior",
-  "role.cofounder": "Co-fundador & Engenheiro Sênior",
-  "role.cofounder.swe": "Co-fundador & Engenheiro de Software",
+  "role.frontend.senior": "Desenvolvedor Front-end Sênior",
+  "role.frontend.mid": "Desenvolvedor Front-end Pleno",
+  "role.cofounder": "Co-fundador & Desenvolvedor Front-end",
+  "role.cofounder.swe": "Co-founder & Software Engineer",
   "role.engineer": "Engenheiro de Software",
-  "role.junior": "Engenheiro Júnior",
+  "role.junior": "Engenheiro de Software Júnior",
 
   /* role types */
   "type.fulltime.remote": "Tempo integral · Remoto",
@@ -100,95 +102,119 @@ export const pt = {
   "dur.v4": "8m · tempo integral",
   "dur.v3": "11m · tempo integral",
 
+  /* v8 (AwSales) */
+  "v8.summary":
+    "Uma <strong>plataforma de vendas com IA</strong>: outreach via WhatsApp, recuperação de leads, campanhas, assistentes de IA e integrações como Hotmart e Stripe. Atuo tanto na plataforma do cliente quanto no back-office interno, e sou dono das features do começo ao fim.",
+  "v8.d1":
+    "Fui um dos engenheiros que construiu o <strong>core da plataforma</strong> que está no ar hoje — moldei decisões técnicas importantes: mudei fluxos, ajustei a estrutura de dados e propus soluções pra chegar no resultado final",
+  "v8.d2":
+    "Construí e mantenho a <strong>integração de billing com Stripe</strong>: assinaturas, webhooks e todo o ciclo de vida da assinatura",
+  "v8.d3":
+    "Construí o <strong>app de back-office interno (Nuxt + Node)</strong> com outros dois engenheiros — a ferramenta que o time de operações usa todos os dias",
+  "v8.d4":
+    "Resolvo <strong>bugs do cliente do começo ao fim</strong>: pego as issues direto do cliente e corrijo atravessando todo o stack, do banco de dados ao frontend",
+  "v8.d5":
+    "Criei toda a <strong>biblioteca de componentes</strong> do zero com React, Vite e Storybook, com testes em Jest e Playwright — componentes reutilizáveis que mantêm a UI consistente",
+  "v8.d6":
+    "Entrego features para o cliente: desenho, construo e refatoro fluxos importantes, trabalhando junto com Produto e Design",
+  "v8.d7":
+    "Ajudo na <strong>descoberta de produto</strong>: defino escopo de features, simplifico as jornadas do usuário e mantenho o roadmap alinhado com o negócio",
+
   /* v9 (Viralify) */
   "v9.summary":
-    "SaaS de IA que transforma vídeos virais em vendas. Análises diárias de virais e roteiros gerados por IA. Sou o único responsável por produto e engenharia; meu co-founder cuida de negócio e conteúdo. Projeto paralelo em part-time, junto ao cargo full-time na <strong>AwSales</strong>.",
+    "<strong>SaaS de IA que transforma conteúdo viral em vendas</strong>, com análises diárias por IA e roteiros gerados por IA. Sou o único responsável por produto e engenharia, e meu co-founder cuida de negócio e conteúdo. Projeto paralelo em part-time, junto ao meu cargo full-time na <strong>AwSales</strong>.",
   "v9.d1":
-    "Construí o produto de ponta a ponta — frontend, backend, modelagem de dados (<strong>MongoDB</strong>) e deploy (<strong>Vercel</strong>) — como único engenheiro e dono de todas as decisões técnicas e de produto",
+    "Construí o produto <strong>de ponta a ponta</strong>: frontend, backend, modelagem de dados (<strong>MongoDB</strong>) e deploy (<strong>Vercel</strong>), como único engenheiro e dono de toda decisão técnica e de produto",
   "v9.d2":
-    "Desenvolvi o <strong>motor de geração de roteiros com IA</strong> — pipeline que parte de vídeos que já viralizaram e gera roteiros adaptados ao nicho de cada usuário",
+    "Criei o <strong>motor de geração de roteiros com IA</strong>: analisa os roteiros de vídeos que já viralizaram e gera novos roteiros adaptados ao nicho de cada usuário, integrando as <strong>APIs da OpenAI e da Anthropic (Claude)</strong>",
   "v9.d3":
-    "Implementei toda a camada de billing com <strong>Stripe</strong> — assinaturas recorrentes, webhooks e ciclo de vida das assinaturas",
+    "Implementei toda a <strong>camada de billing com Stripe</strong>: assinaturas recorrentes, webhooks e ciclo de vida da assinatura",
   "v9.d4":
-    "Liderei um pivot de produto de um acervo de roteiros virais para um <strong>gerador de roteiros com IA</strong>, guiado pelo uso real dos usuários",
+    "Liderei um <strong>pivot de produto</strong>, de um acervo de roteiros virais para um gerador de roteiros com IA, guiado pelo comportamento real dos usuários",
   "v9.d5":
-    "Tração: <strong>180+ cadastros</strong> e <strong>40 assinantes pagantes ativos</strong> (~22% de conversão cadastro→pago); base praticamente dobrou (19 → 40) nas primeiras 6 semanas após o lançamento",
+    "Tração: <strong>180+ cadastros</strong> e <strong>40 assinantes pagantes ativos</strong> (~22% de conversão de cadastro para pago); a base praticamente dobrou (19 → 40) nas primeiras 6 semanas após o lançamento",
 
-  /* v8 */
-  "v8.summary":
-    "Construindo agentes de IA autônomos para vendas e atendimento — a plataforma AI-native de vendas líder no Brasil. Integrações com Stripe, Meta WhatsApp API, Hotmart e além.",
-  "v8.d1":
-    "Lancei <strong>features da plataforma de clientes</strong> end-to-end, co-definindo UX com Produto e Design",
-  "v8.d2":
-    "Construí e mantive o app de back-office interno em <strong>Nuxt + Node</strong>",
-  "v8.d3":
-    "Liderei integrações principais: billing & assinaturas com <strong>Stripe</strong>, <strong>Meta WhatsApp API</strong>",
-  "v8.d4":
-    "Colaboração cross-squad: plataforma de clientes (8 pessoas) + back-office (3 pessoas)",
-  "v8.d5":
-    "Conduzi product discovery — propus jornadas mais simples, alinhei roadmap com resultados de negócio",
-
-  /* v7 */
+  /* v7 (Previdenciarista) */
   "v7.summary":
-    "Mantive uma plataforma SaaS mission-critical atendendo <strong>27K+ clientes ativos</strong> que executam cálculos previdenciários. Tocava o site de marketing, SEO e estabilidade do core.",
+    "Plataforma SaaS com <strong>mais de 27.000 clientes ativos</strong>, usada por advogados para cálculos previdenciários e petições jurídicas. Atuei no produto principal e no site, com foco em performance, SEO e confiabilidade.",
   "v7.d1":
-    "Melhorei a performance do site em <strong>+22%</strong> (Core Web Vitals & Lighthouse)",
+    "Melhorei a <strong>performance do site</strong> via refatorações direcionadas e boas práticas",
   "v7.d2":
-    "Subi os scores de SEO em <strong>+9%</strong> via dados estruturados, GA & GTM",
+    "Melhorei o <strong>SEO</strong> com Google Analytics e Google Tag Manager, acompanhando os resultados",
+  "v7.d3":
+    "Entreguei features com <strong>Next.js</strong>, TypeScript, Tailwind CSS e React Hooks, atuando em todo o produto",
   "v7.d4":
-    "Estabeleci a baseline de testes com <strong>Jest</strong> (unit) e <strong>Playwright</strong> (e2e)",
+    "Montei e mantive o <strong>pipeline de CI/CD</strong> da aplicação, deixando os deploys mais rápidos e confiáveis",
+  "v7.d5":
+    "Reduzi bastante a <strong>complexidade do código</strong> com refatorações — base mais fácil de trabalhar e time mais rápido",
+  "v7.d6":
+    "Escrevi testes unitários e end-to-end com <strong>Jest</strong> e <strong>Playwright</strong> para manter a qualidade alta",
   "v7.note":
     "Passei a <strong>meio período em jul 2024</strong> quando entrei na AwSales (full-time) — mantive a plataforma estável durante a transição.",
 
   /* v6.1 — promoção a Sênior na Conquer */
   "v6_1.summary":
-    "Promovido a Sênior. Liderei a engenharia do <strong>Conquer Plus</strong> — uma plataforma de educação que emitiu <strong>10M+ certificados</strong> para <strong>35M+ alunos globalmente</strong>. Tocava cada fase: arquitetura, seleção de tech, delivery.",
+    "Promovido a Sênior. O <strong>Conquer Plus</strong> é uma plataforma de educação que alcançou <strong>mais de 5M de usuários</strong> no mundo e emitiu <strong>mais de 1M de certificados</strong> — ativa até hoje. Liderei a arquitetura de código e o desenvolvimento do front, atuando em todo o stack com foco forte no front-end.",
   "v6_1.d1":
-    "Conduzi o crescimento do time — mentorei engenheiros, defini a régua de hiring, fazia 1:1s",
+    "Fui a <strong>referência de front-end</strong> do time — liderei a arquitetura de código e o front do Conquer Plus, tomando as decisões técnicas que moldaram a plataforma que está no ar hoje",
   "v6_1.d2":
-    "Estabeleci o <strong>Design System interno</strong> no Figma + código, integrado com Storybook",
+    "Liderei um <strong>produto de survey de ponta a ponta</strong>, front e back — uma pesquisa dinâmica usada de coleta de feedback a medir o nível de um aluno",
   "v6_1.d3":
-    "Arquitetei <strong>micro-frontends</strong> com Single SPA — deploys independentes por domínio",
+    "Construí e mantive o <strong>Design System</strong> interno no Figma e no código, com Storybook, para times de toda a empresa reutilizarem componentes",
   "v6_1.d4":
-    "Tunei performance via auditorias Lighthouse e bundle splitting",
+    "Liderei a implementação de <strong>micro-frontends com Single SPA</strong> — cada domínio com deploy independente",
   "v6_1.d5":
-    "Apresentei tech talks para ampliar o impacto além do time",
+    "Fiz parte do <strong>comitê de produto</strong> e mentorei engenheiros juniores e plenos, em código e em produto",
+  "v6_1.d6":
+    "Criei os projetos dos <strong>cursos de front-end e de Node</strong> e ajudei a montar o curso de React; entreguei features (Next.js, TypeScript, Styled-Components) e melhorei a performance, validada com Lighthouse",
 
-  /* v6.0 — entrada na Conquer como Engenheiro de Software */
+  /* v6.0 — entrada na Conquer como Desenvolvedor Pleno */
   "v6_0.summary":
-    "Entrei no <strong>Conquer Plus</strong> para apoiar o crescimento do produto — entrega de features, triagem de bugs e mentoria em uma plataforma de educação em ritmo acelerado.",
+    "Entrei no <strong>Conquer Plus</strong> como engenheiro pleno e fui promovido a Sênior em out 2022. Fase mão na massa — construindo o produto e crescendo junto com o time.",
   "v6_0.d1":
-    "Liderei design e implementação de novas features que melhoraram a UX da plataforma",
+    "Construí features <strong>de ponta a ponta</strong> como desenvolvedor full stack, no front e no back",
   "v6_0.d2":
-    "Conduzi esforços de resolução de bugs — melhorei a confiabilidade e performance do software",
+    "Projetei e implementei novas features que melhoraram a plataforma e a experiência do usuário",
   "v6_0.d3":
-    "Mentorei colegas com sessões técnicas, compartilhamento de conhecimento e materiais de treinamento",
+    "Corrigi bugs e melhorei a <strong>confiabilidade e a performance</strong> do software",
+  "v6_0.d4":
+    "Dei suporte ao time no dia a dia e criei conteúdo para os <strong>cursos de programação</strong>, transformando temas técnicos em aulas claras",
 
-  /* v5 */
+  /* v5 (Amank) */
   "v5.summary":
-    "Co-fundei a <strong>Amank</strong> — uma plataforma de gestão de SaaS que ajuda empresas a centralizar e reduzir custos de software. Tocava como side project nas horas livres, junto com meus sócios, em paralelo ao trabalho full-time. Adquirida pela <strong>BHUB</strong> em 2024.",
+    "Co-fundei a <strong>Amank</strong> — uma plataforma SaaS que ajudava empresas a centralizar, controlar e reduzir custos com software. Fui dono do front-end e construí ele do zero, enquanto também ajudava a tocar a empresa no dia a dia. <strong>Adquirida pela BHUB em 2024</strong>.",
   "v5.d1":
-    "Construí a interface do produto do zero — usabilidade, performance, escalabilidade",
+    "Co-fundei a empresa e construí o <strong>front-end do produto do zero</strong>, usando tecnologias modernas para usabilidade, performance e escalabilidade",
   "v5.d2":
-    "Co-moldei a estratégia de produto, features end-to-end, arquitetura",
+    "Ajudei a tocar a empresa além do código: planejamento de produto, arquitetura e desenvolvimento ponta a ponta, moldando features e experiência do usuário desde o início",
   "v5.d3":
-    "<strong>Saída por aquisição</strong> — Amank foi adquirida pela BHUB em 2024",
+    "Atuei em <strong>modo founder</strong> de verdade: equilibrei velocidade, valor para o cliente e trade-offs técnicos num ambiente early-stage, vestindo várias camisas",
+  "v5.d4":
+    "<strong>Aquisição</strong>: a Amank se destacou no mercado e foi adquirida pela <strong>BHUB em 2024</strong>",
 
   /* v4 — Chamer */
   "v4.summary":
-    "Conduzi desenvolvimento de features em plataformas de e-commerce e dashboards data-driven em um time pequeno e de ritmo acelerado.",
+    "Conduzi o desenvolvimento de features em <strong>plataformas de e-commerce e dashboards data-driven</strong> num time pequeno e ágil — com REST APIs para integração fluida com o banco.",
   "v4.d1":
-    "Implementei SEO avançado — <strong>+20% nos rankings de busca orgânica</strong>",
+    "Construí e entreguei features-chave entre plataformas com <strong>React e TypeScript</strong>, melhorando interação e funcionalidade",
   "v4.d2":
-    "Otimizei performance da aplicação — reduzi tempos de carregamento entre plataformas",
+    "Liderei o desenvolvimento de <strong>plataformas de e-commerce e dashboards data-driven</strong> que melhoraram operações e tomada de decisão",
+  "v4.d3":
+    "Implementei <strong>SEO avançado</strong> — melhorei os rankings de busca orgânica, o tráfego e a aquisição",
+  "v4.d4":
+    "Otimizei a <strong>performance</strong> das aplicações — reduzi tempos de carregamento e melhorei a responsividade",
 
   /* v3 — WebTrip */
   "v3.summary":
-    "Onde dei meus primeiros passos — trabalho full-stack, manutenção de servidor e automação de processos em um time pequeno.",
+    "Onde dei meus primeiros passos — função versátil cobrindo web full-stack, <strong>gestão de servidores</strong>, telefonia e suporte de TI num time pequeno.",
   "v3.d1":
-    "Automatizei <strong>6+ fluxos internos de reporting</strong> — entrada manual de dados caiu 70%",
+    "Automatizei <strong>6+ fluxos internos de reporting</strong> com Google Apps Script — entrada manual de dados caiu 70%, ligações caíram 12%",
   "v3.d2":
-    "Desenhei 10+ melhorias de processo, reduzindo tempo de turnaround",
+    "Desenhei e implementei <strong>10+ melhorias de processo</strong>, reduzindo o tempo de turnaround",
+  "v3.d3":
+    "Melhorei os sites da empresa (HTML, CSS, JavaScript) e mantive o <strong>Suite CRM</strong> para o time de vendas",
+  "v3.d4":
+    "Mantive servidores e telefonia (IVR + ramais), mantendo a operação rodando",
 
   /* work */
   "work.eyebrow": "Trabalhos selecionados",
@@ -247,7 +273,7 @@ export const pt = {
   "process.c4.eyebrow": "04 / Voz",
   "process.c4.title": "Mostre, não diga.",
   "process.c4.body":
-    "Números reais (35M+ usuários, 22% de ganho de perf) no lugar de adjetivos. Imperativos curtos nos CTAs. Markers em estilo de comentário de código como divisores. Zero buzzwords.",
+    "Números reais (5M+ usuários, 27K+ clientes) no lugar de adjetivos. Imperativos curtos nos CTAs. Markers em estilo de comentário de código como divisores. Zero buzzwords.",
 
   "process.cta.ds": "Ler o design system completo",
   "process.cta.gh": "Ver código no GitHub",
