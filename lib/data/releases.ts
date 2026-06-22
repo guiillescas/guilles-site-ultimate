@@ -55,7 +55,7 @@ export const releases: Release[] = [
       { key: "v8.d6", marker: "+" },
       { key: "v8.d7", marker: "★", tone: "led" },
     ],
-    stack: ["Next.js", "TypeScript", "React", "Vite", "React Query", "Node.js", "Nuxt", "Prisma", "Stripe", "WhatsApp API", "Tailwind", "Storybook", "Jest", "Playwright", "GCP", "Docker", "GitHub Actions", "Figma"],
+    stack: ["Next.js", "TypeScript", "React", "Vite", "React Query", "Node.js", "Nuxt", "Prisma", "GraphQL", "Stripe", "WhatsApp API", "Tailwind", "Storybook", "Jest", "Playwright", "GCP", "Docker", "GitHub Actions", "Figma"],
     hash: "a8f2c7e",
   },
   {
